@@ -1,0 +1,96 @@
+<peripherals chip_type="netx90_rev0,netx90_rev1,netx90" board="default,nrp_h90-re_fxdx">
+	<peripherals_list>
+		<peripheral id="sqi" name="SQI FLASH">
+			<configurations>
+				<config id="W25Q32BV" name="Winbond W25Q32BV">
+					<signals>
+						<signal id="sqi_clk"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_cs0n" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_miso" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_mosi" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_sio2" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_sio3" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+					</signals>
+					<parameters>
+						<!-- Frequency for FIFO mode -->
+						<param id="freq_fifo_mhz" value="50"            read_only="true"/>
+						<!-- false: XIP not possible; true: XIP possible -->
+						<param id="xip_possible" value="true"           read_only="true"/>
+						<!-- Frequency for XIP mode -->
+						<param id="freq_xip_mhz" value="50"             read_only="true"/>
+                        
+						<param id="bWriteEnable"    value="0x06"        read_only="true"/>
+						<param id="bPageProgram"    value="0x02"        read_only="true"/>
+						<param id="bSectorErase"    value="0x20"        read_only="true"/>
+						<param id="bRead"           value="0x03"        read_only="true"/>
+						<param id="bQuadRead"       value="0xEB"        read_only="true"/>
+						<param id="bReadStatus1"    value="0x05"        read_only="true"/>
+						<param id="bWriteStatus1"   value="0x01"        read_only="true"/>
+						<param id="bReadStatus2"    value="0x35"        read_only="true"/>
+						<param id="bWriteStatus2"   value="0x31"        read_only="true"/>
+						<param id="bAddrBytes"      value="0x03"        read_only="true"/>
+						<param id="bQERType"        value="4"           read_only="true"/>
+						<param id="bEntryType"      value="1"           read_only="true"/>
+						<param id="bExitType"       value="2"           read_only="true"/>
+						<param id="bPollingMethod"  value="2"           read_only="true"/>
+						<param id="bSpiFifoMode"    value="0"           read_only="true"/>
+						<param id="ulPageSize"      value="0x00000100"  read_only="true"/> 
+						<param id="ulSectorSize"    value="0x00001000"  read_only="true"/> 
+						<param id="ulSectorCount"   value="0x00000400"  read_only="true"/> 
+						
+						<param id="t_csh"             value="0"         read_only="true"/>
+						<param id="cmd_byte"          value="0xa5"      read_only="true"/>
+						<param id="addr_nibbles"      value="1"         read_only="true"/>
+						<param id="addr_before_cmd"   value="1"         read_only="true"/>
+						<param id="dummy_cycles"      value="4"         read_only="true"/>
+					</parameters>
+				</config>
+                
+				<config id="W25Q32FV" name="Winbond W25Q32FV">
+					<signals>
+						<signal id="sqi_clk"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_cs0n" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_miso" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_mosi" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_sio2" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="sqi_sio3" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+					</signals>
+					<parameters>
+						<!-- Frequency for FIFO mode -->
+						<param id="freq_fifo_mhz" value="50"            read_only="true"/>
+						<!-- false: XIP not possible; true: XIP possible -->
+						<param id="xip_possible" value="true"           read_only="true"/>
+						<!-- Frequency for XIP mode -->
+						<param id="freq_xip_mhz" value="50"             read_only="true"/>
+                        
+						<param id="bWriteEnable"    value="0x06"        read_only="true"/>
+						<param id="bPageProgram"    value="0x02"        read_only="true"/>
+						<param id="bSectorErase"    value="0x20"        read_only="true"/>
+						<param id="bRead"           value="0x03"        read_only="true"/>
+						<param id="bQuadRead"       value="0xEB"        read_only="true"/>
+						<param id="bReadStatus1"    value="0x05"        read_only="true"/>
+						<param id="bWriteStatus1"   value="0x01"        read_only="true"/>
+						<param id="bReadStatus2"    value="0x35"        read_only="true"/>
+						<param id="bWriteStatus2"   value="0x31"        read_only="true"/>
+						<param id="bAddrBytes"      value="0x03"        read_only="true"/>
+						<param id="bQERType"        value="4"           read_only="true"/>
+						<param id="bEntryType"      value="1"           read_only="true"/>
+						<param id="bExitType"       value="2"           read_only="true"/>
+						<param id="bPollingMethod"  value="2"           read_only="true"/>
+						<param id="bSpiFifoMode"    value="0"           read_only="true"/>
+						<param id="ulPageSize"      value="0x00000100"  read_only="true"/> 
+						<param id="ulSectorSize"    value="0x00001000"  read_only="true"/> 
+						<param id="ulSectorCount"   value="0x00000400"  read_only="true"/> 
+
+						<param id="t_csh"             value="0"         read_only="true"/>
+						<param id="cmd_byte"          value="0xa5"      read_only="true"/>
+						<param id="addr_nibbles"      value="1"         read_only="true"/>
+						<param id="addr_before_cmd"   value="1"         read_only="true"/>
+						<param id="dummy_cycles"      value="4"         read_only="true"/>
+					</parameters>
+				</config>
+			</configurations>
+		</peripheral>
+	</peripherals_list>
+</peripherals>
+

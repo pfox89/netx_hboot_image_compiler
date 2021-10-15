@@ -1,0 +1,139 @@
+v0.0.11
+
+netX 90 APP image compiler:
+
+  * Add command line argument to specify the chip type.
+  
+  * Rename argument --sdsize to --sdram_split_offset. 
+    New default value is 0 (i.e. SDRAM exclusive to APP CPU). 
+  
+  * Allow building an empty dummy image by passing a "," as the segment list. 
+    When there is no data for an image, the header will be written anyway.
+  
+  * Do not build a boot image if its output file name has been omitted from 
+    the command line or an empty string is passed.
+  
+  * Keep track of segments in the ELF file containing data and which ones have
+    been output to a boot image.
+  
+  * Set the destination address in the boot header if the address is in the SDRAM. 
+    Otherwise, set it to 0.
+  
+netX 4000 HBoot image compiler:
+
+  * Allow building execute CA9 chunks with both target addresses set to 0 to enable 
+    JTAG debugging.
+
+v0.0.10
+
+  * Add support for the chip type netx 90 Rev.1 (NETX90B)
+  
+  * Add netx90_app_image.py, allowing to build multi-part boot images for the netx 90 APP CPU.
+  
+  * Add data type String to Concat node.
+  
+
+v0.0.9
+
+  * Add flash device and offset information to boot header (optional).
+
+  * Improved error message when call to objdump/objcopy/readelf fails.
+
+  * Support Firewall settings for netx 90 Full.
+  
+
+v0.0.8
+
+  * Support REGI chunk for netx 90 Full.
+
+  * Fix "Exec" chunk for netX90 MPW.
+    The netX90 introduced an additional DWORD in the "Exec" chunk which was erroneously added for the MPW.
+
+
+v0.0.7
+
+  * Support file aliases in "skip" chunks.
+
+  * Add all chunks for the netX90 FULL.
+
+  * Separate data items with comma.
+
+  * Remove the obsolete netx90 MPW APP support.
+
+  * Add an image type for alternative images on netX90, netX4000 and netX4100.
+
+  * Add the address of the netX4000 "portcontrol_init" as "apply_port_control".
+
+  * Read contents for a "Skip" chunk from an ELF file.
+
+
+v0.0.6
+
+  * Add "SkipIncomplete" tag.
+
+  * Search the start symbol in the symbol table first and use the file header as a fallback.
+
+  * Ignore structure declarations from the ELF debug information.
+
+
+v0.0.5
+
+  * Support option chunks for the netX90 MPW.
+
+  * Add the possibility to read the keys for the trust paths, license, CR7
+    software and CA9 software chunks from a file.
+
+  * Pass the keyrom location from the command line to the generator.
+
+  * Use a public key for the trust paths.
+
+  * Add support for netX4000 and netX4100.
+
+  * Add UInt32, UInt16, UInt8 and Concat nodes to specify data blocks.
+
+
+v0.0.4
+
+  * Add a new option "-S" / "--sniplib" to specify a sniplib location.
+    The option can be used multiple times to specify more than one sniplib.
+
+  * Accept hexadecimal values for the "offset" attribute.
+
+  * Fix the "Skip" and "XIP" chunks for non zero offsets.
+
+  * Read the RootCert, LicenseCert, CA9Software and CR7Software chunks from a
+    file, if a "File" child node is present.
+
+
+v0.0.3
+
+  * Support the SQIROM0 and SQIROM1 areas on the netX4000.
+
+  * Add "fill" and "file" attributes to the "Skip" tag.
+
+  * Create "Text" chunks.
+
+  * Add the attributes "has_header" and "has_end" to control the output of the header and end marker.
+
+
+v0.0.2
+
+  * Add a "overwrite_address" attribute for data chunks from ELF sections.
+    It allows to overwrite the load address of the data.
+
+  * Add a "segments" attribute to use only the selected segments from an ELF
+    file.
+
+  * Fix the command line interpreter to accept the "NETX90_MPW_APP" for
+    "--netx-type".
+
+  * Change the extraction method of the start address from an ELF file.
+    The old way extracted all symbols with the "readelf" tool and searched for
+    a global symbol with the name "start".
+    The new way reads the file header - again with the "readelf" tool - and
+    extracts the line with the "Entry point address".
+
+
+v0.0.1 (15.12.2016)
+
+  Initial release.

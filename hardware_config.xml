@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hwconfig tool_version="3.0.17" peripherals_version="1.4.0.0" chip_type="netx90_rev1" board="default">
+    <peripherals>
+        <peripheral id="clk25out"/>
+        <peripheral id="general">
+            <config id="default">
+                <parameter id="file_version" value="0"/>
+                <parameter id="app_cpu_enable" value="true"/>
+                <parameter id="struct_version" value="2"/>
+                <parameter id="firewall_sqi_flash" value="app_only"/>
+                <parameter id="firewall_pad_ctrl" value="app_only"/>
+                <parameter id="firewall_eth_mac" value="app_only"/>
+                <parameter id="firewall_madc" value="app_only"/>
+                <parameter id="firewall_sdram" value="com_and_app"/>
+                <parameter id="firewall_uart" value="app_only"/>
+                <parameter id="firewall_debug_slave" value="no_access"/>
+                <parameter id="idpm_enable" value="true"/>
+                <parameter id="file_text" value=""/>
+                <parameter id="firewall_crypt_system" value="com_only"/>
+                <parameter id="firewall_extmem" value="app_only"/>
+            </config>
+        </peripheral>
+        <peripheral id="gpio0"/>
+        <peripheral id="gpio1"/>
+        <peripheral id="gpio2"/>
+        <peripheral id="gpio3"/>
+        <peripheral id="gpio4"/>
+        <peripheral id="gpio5"/>
+        <peripheral id="gpio6"/>
+        <peripheral id="gpio7"/>
+        <peripheral id="mmio0"/>
+        <peripheral id="mmio1"/>
+        <peripheral id="mmio2"/>
+        <peripheral id="mmio3"/>
+        <peripheral id="mmio4"/>
+        <peripheral id="mmio5"/>
+        <peripheral id="mmio6"/>
+        <peripheral id="mmio7"/>
+        <peripheral id="phy0_phy1">
+            <config id="default">
+                <parameter id="hw_option" value="0x0080"/>
+            </config>
+        </peripheral>
+        <peripheral id="pio6"/>
+        <peripheral id="pio7"/>
+        <peripheral id="uart">
+            <config id="uart"/>
+        </peripheral>
+    </peripherals>
+    <io_config>
+        <pin id="CLK25OUT" peripheral="clk25out" function="clk25out"/>
+        <pin id="HIF_A10" peripheral="gpio7" function="gpio7"/>
+        <pin id="HIF_A3" peripheral="gpio0" function="gpio0"/>
+        <pin id="HIF_A4" peripheral="gpio1" function="gpio1"/>
+        <pin id="HIF_A5" peripheral="gpio2" function="gpio2"/>
+        <pin id="HIF_A6" peripheral="gpio3" function="gpio3"/>
+        <pin id="HIF_A7" peripheral="gpio4" function="gpio4"/>
+        <pin id="HIF_A8" peripheral="gpio5" function="gpio5"/>
+        <pin id="HIF_A9" peripheral="gpio6" function="gpio6"/>
+        <pin id="HIF_D6" peripheral="pio6" function="pio_app6"/>
+        <pin id="HIF_D7" peripheral="pio7" function="pio_app7"/>
+        <pin id="MLED0" peripheral="phy0_phy1" function="mled0"/>
+        <pin id="MLED1" peripheral="phy0_phy1" function="mled1"/>
+        <pin id="MLED2" peripheral="phy0_phy1" function="mled2"/>
+        <pin id="MLED3" peripheral="phy0_phy1" function="mled3"/>
+        <pin id="MMIO0" peripheral="mmio0" function="mmio0"/>
+        <pin id="MMIO1" peripheral="mmio1" function="mmio1"/>
+        <pin id="MMIO2" peripheral="mmio2" function="mmio2"/>
+        <pin id="MMIO3" peripheral="mmio3" function="mmio3"/>
+        <pin id="MMIO4" peripheral="mmio4" function="mmio4"/>
+        <pin id="MMIO5" peripheral="mmio5" function="mmio5"/>
+        <pin id="MMIO6" peripheral="mmio6" function="mmio6"/>
+        <pin id="MMIO7" peripheral="mmio7" function="mmio7"/>
+        <pin id="PHY0_RXN" peripheral="phy0_phy1" function="phy0_rxn"/>
+        <pin id="PHY0_RXP" peripheral="phy0_phy1" function="phy0_rxp"/>
+        <pin id="PHY0_TXN" peripheral="phy0_phy1" function="phy0_txn"/>
+        <pin id="PHY0_TXP" peripheral="phy0_phy1" function="phy0_txp"/>
+        <pin id="PHY1_RXN" peripheral="phy0_phy1" function="phy1_rxn"/>
+        <pin id="PHY1_RXP" peripheral="phy0_phy1" function="phy1_rxp"/>
+        <pin id="PHY1_TXN" peripheral="phy0_phy1" function="phy1_txn"/>
+        <pin id="PHY1_TXP" peripheral="phy0_phy1" function="phy1_txp"/>
+        <pin id="UART_RXD" peripheral="uart" function="uart_rxd"/>
+        <pin id="UART_TXD" peripheral="uart" function="uart_txd"/>
+    </io_config>
+    <mmio_config>
+        <mmio id="mmio0" signal="uart_app_rxd"/>
+        <mmio id="mmio1" signal="uart_app_txd"/>
+    </mmio_config>
+    <pad_config>
+        <pin id="CLK25OUT" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_A10" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_A3" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_A4" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_A5" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_A6" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_A7" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_A8" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_A9" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_D6" drive_strength="low" pull_enable="true"/>
+        <pin id="HIF_D7" drive_strength="low" pull_enable="true"/>
+        <pin id="MLED0" drive_strength="high" pull_enable="false"/>
+        <pin id="MLED1" drive_strength="high" pull_enable="false"/>
+        <pin id="MLED2" drive_strength="high" pull_enable="false"/>
+        <pin id="MLED3" drive_strength="high" pull_enable="false"/>
+        <pin id="MMIO0" drive_strength="low" pull_enable="true"/>
+        <pin id="MMIO1" drive_strength="low" pull_enable="true"/>
+        <pin id="MMIO2" drive_strength="low" pull_enable="true"/>
+        <pin id="MMIO3" drive_strength="low" pull_enable="true"/>
+        <pin id="MMIO4" drive_strength="low" pull_enable="true"/>
+        <pin id="MMIO5" drive_strength="low" pull_enable="true"/>
+        <pin id="MMIO6" drive_strength="low" pull_enable="true"/>
+        <pin id="MMIO7" drive_strength="low" pull_enable="true"/>
+        <pin id="UART_RXD" pull_enable="true"/>
+        <pin id="UART_TXD" drive_strength="low" pull_enable="true"/>
+    </pad_config>
+</hwconfig>

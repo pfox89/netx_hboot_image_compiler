@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "hwconfig",
+            "type": "python",
+            "request": "launch",
+            "module": "hboot_image_compiler.hwconfig",
+            "args": [
+                "make_hboot_xml", 
+                "-p", "netx90_rev1_peripherals.xml",
+                "hardware_config.xml", "hardware_config.hboot.xml"
+            ]
+        },
+        {
+            "name": "hboot",
+            "type": "python",
+            "request": "launch",
+            "module": "hboot_image_compiler",
+            "args": [
+                "-n", "NETX90B",
+                "-A", "hw_config=hardware_config.hboot.xml",
+                "top_hboot_image_hwc.xml",
+                "hardware_config.hwc.bin"
+            ]
+        }
+    ]
+}

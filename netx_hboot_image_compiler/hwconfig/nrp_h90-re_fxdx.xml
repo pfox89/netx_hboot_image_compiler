@@ -1,0 +1,1559 @@
+<peripherals chip_type="netx90_rev0,netx90_rev1,netx90" board="nrp_h90-re_fxdx" version="1.4.0.0"> 
+
+<bga size="10x21">
+    <ball id="dummy_1" name=" " />
+    <ball id="J3" name="BOD" />
+    <ball id="E11" name="PHY1_TXN" pad_type="PHY" />
+    <ball id="E12" name="PHY1_TXP" pad_type="PHY" />
+    <ball id="F11" name="PHY1_RXN" pad_type="PHY" />
+    <ball id="F12" name="PHY1_RXP" pad_type="PHY" />
+    <ball id="H11" name="PHY0_RXN" pad_type="PHY" />
+    <ball id="H12" name="PHY0_RXP" pad_type="PHY" />
+    <ball id="J11" name="PHY0_TXN" pad_type="PHY" />
+    <ball id="J12" name="PHY0_TXP" pad_type="PHY" />
+    <ball id="G11" name="UART_TXD" pad_type="OZD48C" />
+    <ball id="G10" name="UART_RXD" pad_type="ID24S" />
+    <ball id="K11" name="MLED3" pad_type="OZD48C" />
+    <ball id="J10" name="MLED2" pad_type="OZD48C" />
+    <ball id="K10" name="MLED1" pad_type="OZD48C" />
+    <ball id="L10" name="MLED0" pad_type="OZD48C" />
+    <ball id="J2" name="RUN_N" />
+    <ball id="J1" name="RDY_N" />
+    <ball id="A11" name="VDDIO" />
+    <ball id="A12" name="VSS(GND)" />
+    <ball id="dummy_2" name=" " />
+
+    <ball id="H9" name="MII1_TXD2/LVDS0_TXN" pad_type="IOD48CS/LVDS" />
+    <ball id="dummy_3" name=" " />
+    <ball id="dummy_4" name=" " />
+    <ball id="dummy_5" name=" " />
+    <ball id="dummy_6" name=" " />
+    <ball id="dummy_7" name=" " />
+    <ball id="dummy_8" name=" " />
+    <ball id="dummy_9" name=" " />
+    <ball id="dummy_10" name=" " />
+    <ball id="dummy_11" name=" " />
+    <ball id="dummy_12" name=" " />
+    <ball id="dummy_13" name=" " />
+    <ball id="dummy_14" name=" " />
+    <ball id="dummy_15" name=" " />
+    <ball id="dummy_16" name=" " />
+    <ball id="dummy_17" name=" " />
+    <ball id="dummy_18" name=" " />
+    <ball id="dummy_19" name=" " />
+    <ball id="dummy_20" name=" " />
+    <ball id="dummy_21" name=" " />
+    <ball id="M3" name="RST_IN_N" />
+
+    <ball id="H8" name="MII1_TXD3/LVDS0_TXP" pad_type="IOD48CS/LVDS" />
+    <ball id="dummy_22" name=" " />
+    <ball id="C5" name="HIF_A0" pad_type="IOU48S" />
+    <ball id="B5" name="HIF_A1" pad_type="IOU48S" />
+    <ball id="A5" name="HIF_A2" pad_type="IOU48S" />
+    <ball id="C4" name="HIF_A3" pad_type="IOU48S" />
+    <ball id="B4" name="HIF_A4" pad_type="IOU48S" />
+    <ball id="A4" name="HIF_A5" pad_type="IOU48S" />
+    <ball id="C3" name="HIF_A6" pad_type="IOU48S" />
+    <ball id="B3" name="HIF_A7" pad_type="IOU48S" />
+    <ball id="dummy_23" name=" " />
+    <ball id="dummy_24" name=" " />
+    <ball id="dummy_25" name=" " />
+    <ball id="dummy_26" name=" " />
+    <ball id="dummy_27" name=" " />
+    <ball id="dummy_28" name=" " />
+    <ball id="dummy_29" name=" " />
+    <ball id="dummy_30" name=" " />
+    <ball id="dummy_31" name=" " />
+    <ball id="dummy_32" name=" " />
+    <ball id="L3" name="RST_OUT_N" pad_type="IOD48CS" />
+
+    <ball id="J8" name="MII1_TXD1/LVDS0_RXP" pad_type="IOD48CS/LVDS" />
+    <ball id="dummy_33" name=" " />
+    <ball id="A3" name="HIF_A8" pad_type="IOU48S" />
+    <ball id="C2" name="HIF_A9" pad_type="IOU48S" />
+    <ball id="B2" name="HIF_A10" pad_type="IOU48S" />
+    <ball id="C1" name="HIF_A11" pad_type="IOU48S" />
+    <ball id="D1" name="HIF_A12" pad_type="IOU48S" />
+    <ball id="D2" name="HIF_A13" pad_type="IOU48S" />
+    <ball id="D3" name="HIF_A14" pad_type="IOU48S" />
+    <ball id="dummy_34" name=" " />
+    <ball id="dummy_35" name=" " />
+    <ball id="dummy_36" name=" " />
+    <ball id="dummy_37" name=" " />
+    <ball id="dummy_38" name=" " />
+    <ball id="dummy_39" name=" " />
+    <ball id="dummy_40" name=" " />
+    <ball id="dummy_41" name=" " />
+    <ball id="dummy_42" name=" " />
+    <ball id="dummy_43" name=" " />
+    <ball id="dummy_44" name=" " />
+    <ball id="H5" name="MII0_RXD2" pad_type="IOD48S" />
+
+    <ball id="J9" name="MII1_TXD0/LVDS0_RXN" pad_type="IOD48CS/LVDS" />
+    <ball id="dummy_45" name=" " />
+    <ball id="D4" name="HIF_A15" pad_type="IOU48S" />
+    <ball id="D5" name="HIF_A16" pad_type="IOU48S" />
+    <ball id="D6" name="HIF_A17" pad_type="IOU48S" />
+    <ball id="D7" name="HIF_BHEN" pad_type="IOU48S" />
+    <ball id="D8" name="HIF_CSN" pad_type="IOU48S" />
+    <ball id="E3" name="HIF_RDY" pad_type="IOU48S" />
+    <ball id="F1" name="HIF_SDCLK" pad_type="IOU48S" />
+    <ball id="E1" name="HIF_WRN" pad_type="IOU48S" />
+    <ball id="dummy_46" name=" " />
+    <ball id="dummy_47" name=" " />
+    <ball id="dummy_48" name=" " />
+    <ball id="dummy_49" name=" " />
+    <ball id="dummy_50" name=" " />
+    <ball id="H2" name="SQI_CLK" pad_type="IOU48S" />
+    <ball id="G2" name="SQI_MISO" pad_type="IOU48S" />
+    <ball id="G3" name="SQI_SIO2" pad_type="IOU48S" />
+    <ball id="dummy_51" name=" " />
+    <ball id="dummy_52" name=" " />
+    <ball id="J7" name="MII0_TXD0/ADC2_IN7" pad_type="IOD48CSIANA" />
+
+    <ball id="G8" name="MII1_RXD1/LVDS1_TXP" pad_type="IOD48S/LVDS" />
+    <ball id="dummy_53" name=" " />
+    <ball id="E10" name="MII1_RXER" pad_type="IOD48CS" />
+    <ball id="E9" name="MII1_CRS" pad_type="IOD48CS" />
+    <ball id="E8" name="MII1_COL" pad_type="IOD48CS" />
+    <ball id="E7" name="PHY0_LED_LINK_IN" pad_type="ID24S" />
+    <ball id="E6" name="PHY1_LED_LINK_IN" pad_type="ID24S" />
+    <ball id="F5" name="MII0_TXEN" pad_type="IOD48CS" />
+    <ball id="E5" name="MII0_COL" pad_type="IOD48CS" />
+    <ball id="E4" name="MII0_CRS" pad_type="IOD48CS" />
+    <ball id="dummy_54" name=" " />
+    <ball id="dummy_55" name=" " />
+    <ball id="dummy_56" name=" " />
+    <ball id="dummy_57" name=" " />
+    <ball id="dummy_58" name=" " />
+    <ball id="G1" name="SQI_CS0N" pad_type="IOU48S" />
+    <ball id="H1" name="SQI_MOSI" pad_type="IOU48S" />
+    <ball id="H3" name="SQI_SIO3" pad_type="IOU48S" />
+    <ball id="dummy_59" name=" " />
+    <ball id="dummy_60" name=" " />
+    <ball id="J4" name="MII0_RXD1" pad_type="IOD48S" />
+
+    <ball id="F9" name="MII1_RXD2/LVDS1_RXP" pad_type="IOD48S/LVDS" />
+    <ball id="dummy_61" name=" " />
+    <ball id="B11" name="HIF_D0" pad_type="IOU48S" />
+    <ball id="C10" name="HIF_D1" pad_type="IOU48S" />
+    <ball id="B10" name="HIF_D2" pad_type="IOU48S" />
+    <ball id="A10" name="HIF_D3" pad_type="IOU48S" />
+    <ball id="C9" name="HIF_D4" pad_type="IOU48S" />
+    <ball id="B9" name="HIF_D5" pad_type="IOU48S" />
+    <ball id="A9" name="HIF_D6" pad_type="IOU48S" />
+    <ball id="C8" name="HIF_D7" pad_type="IOU48S" />
+    <ball id="dummy_62" name=" " />
+    <ball id="dummy_63" name=" " />
+    <ball id="dummy_64" name=" " />
+    <ball id="dummy_65" name=" " />
+    <ball id="dummy_66" name=" " />
+    <ball id="dummy_67" name=" " />
+    <ball id="dummy_68" name=" " />
+    <ball id="dummy_69" name=" " />
+    <ball id="dummy_70" name=" " />
+    <ball id="dummy_71" name=" " />
+    <ball id="J5" name="MII0_RXD0" pad_type="ID24S" />
+
+    <ball id="E2" name="HIF_RDN" pad_type="IOU48S" />
+    <ball id="dummy_72" name=" " />
+    <ball id="dummy_73" name=" " />
+    <ball id="dummy_74" name=" " />
+    <ball id="dummy_75" name=" " />
+    <ball id="dummy_76" name=" " />
+    <ball id="dummy_77" name=" " />
+    <ball id="dummy_78" name=" " />
+    <ball id="dummy_79" name=" " />
+    <ball id="dummy_80" name=" " />
+    <ball id="dummy_81" name=" " />
+    <ball id="dummy_82" name=" " />
+    <ball id="dummy_83" name=" " />
+    <ball id="dummy_84" name=" " />
+    <ball id="dummy_85" name=" " />
+    <ball id="dummy_86" name=" " />
+    <ball id="dummy_87" name=" " />
+    <ball id="dummy_88" name=" " />
+    <ball id="dummy_89" name=" " />
+    <ball id="dummy_90" name=" " />
+    <ball id="K6" name="COM_IO1/ADC3_IN3" pad_type="IOD48CSIANA" />
+
+    <ball id="F2" name="HIF_DIRQ" pad_type="IOU48S" />
+    <ball id="dummy_91" name=" " />
+    <ball id="dummy_92" name=" " />
+    <ball id="dummy_93" name=" " />
+    <ball id="dummy_94" name=" " />
+    <ball id="dummy_95" name=" " />
+    <ball id="dummy_96" name=" " />
+    <ball id="dummy_97" name=" " />
+    <ball id="dummy_98" name=" " />
+    <ball id="dummy_99" name=" " />
+    <ball id="dummy_100" name=" " />
+    <ball id="dummy_101" name=" " />
+    <ball id="dummy_102" name=" " />
+    <ball id="dummy_103" name=" " />
+    <ball id="dummy_104" name=" " />
+    <ball id="dummy_105" name=" " />
+    <ball id="dummy_106" name=" " />
+    <ball id="dummy_107" name=" " />
+    <ball id="dummy_108" name=" " />
+    <ball id="dummy_109" name=" " />
+    <ball id="K7" name="COM_IO0/ADC3_IN2" pad_type="IOD48CSIANA" />
+
+    <ball id="dummy_110" name=" " />
+    <ball id="A1" name="VSS(GND)" />
+    <ball id="A2" name="VDDIO" />
+    <ball id="A6" name="HIF_D15" pad_type="IOU48S" />
+    <ball id="B6" name="HIF_D14" pad_type="IOU48S" />
+    <ball id="C6" name="HIF_D13" pad_type="IOU48S" />
+    <ball id="A7" name="HIF_D12" pad_type="IOU48S" />
+    <ball id="B7" name="HIF_D11" pad_type="IOU48S" />
+    <ball id="C7" name="HIF_D10" pad_type="IOU48S" />
+    <ball id="A8" name="HIF_D9" pad_type="IOU48S" />
+    <ball id="B8" name="HIF_D8" pad_type="IOU48S" />
+    <ball id="L4" name="MMIO7/ADC1_IN1" pad_type="IOD48CSIANA" />
+    <ball id="M4" name="MMIO6/ADC1_IN0" pad_type="IOD48CSIANA" />
+    <ball id="L5" name="MMIO5/ADC0_IN1" pad_type="IOD48CSIANA" />
+    <ball id="M5" name="MMIO4/ADC0_IN0" pad_type="IOD48CSIANA" />
+    <ball id="L6" name="MMIO3/ADC3_IN1" pad_type="IOD48CSIANA" />
+    <ball id="M6" name="MMIO2/ADC3_IN0" pad_type="IOD48CSIANA" />
+    <ball id="L7" name="MMIO1/ADC2_IN1" pad_type="IOD48CSIANA" />
+    <ball id="M7" name="MMIO0/ADC2_IN0" pad_type="IOD48CSIANA" />
+    <ball id="L2" name="VREF_ADC" />
+    <ball id="dummy_111" name=" " />
+
+    </bga>
+<mux_pins>
+    <pin id="HIF_A0" ball="C5" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A1" ball="B5" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A2" ball="A5" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A3" ball="C4" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A4" ball="B4" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A5" ball="A4" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A6" ball="C3" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A7" ball="B3" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A8" ball="A3" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A9" ball="C2" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A10" ball="B2" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A11" ball="C1" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A12" ball="D1" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A13" ball="D2" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A14" ball="D3" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A15" ball="D4" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A16" ball="D5" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_A17" ball="D6" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D0" ball="B11" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D1" ball="C10" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D2" ball="B10" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D3" ball="A10" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D4" ball="C9" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D5" ball="B9" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D6" ball="A9" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D7" ball="C8" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D8" ball="B8" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D9" ball="A8" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D10" ball="C7" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D11" ball="B7" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D12" ball="A7" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D13" ball="C6" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D14" ball="B6" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_D15" ball="A6" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_BHEN" ball="D7" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_CSN" ball="D8" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_RDN" ball="E2" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_WRN" ball="E1" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_RDY" ball="E3" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_DIRQ" ball="F2" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="HIF_SDCLK" ball="F1" drive_strength="low" internal_resistor="pu,enabled" />
+    
+    <pin id="MII0_RXD0" ball="J5" drive_strength="-" internal_resistor="pd,enabled" />
+    <pin id="MII0_RXD1" ball="J4" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MII0_RXD2" ball="H5" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MII0_TXD0" ball="J7" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MII0_TXEN" ball="F5" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MII0_COL" ball="E5" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MII0_CRS" ball="E4" drive_strength="low" internal_resistor="pd,enabled" />
+    
+    <pin id="MII1_RXD1" ball="G8" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MII1_RXD2" ball="F9" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MII1_RXER" ball="E10" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MII1_TXD0" ball="J9" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MII1_TXD1" ball="J8" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MII1_TXD2" ball="H9" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MII1_TXD3" ball="H8" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MII1_COL" ball="E8" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MII1_CRS" ball="E9" drive_strength="low" internal_resistor="pd,enabled" />
+    
+    <pin id="PHY1_LED_LINK_IN" ball="E6" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="PHY0_LED_LINK_IN" ball="E7" drive_strength="low" internal_resistor="pd,enabled" />
+    
+    <pin id="PHY0_TXP" ball="J12" drive_strength="-" internal_resistor="-" />
+    <pin id="PHY0_TXN" ball="J11" drive_strength="-" internal_resistor="-" />
+    <pin id="PHY0_RXP" ball="H12" drive_strength="-" internal_resistor="-" />
+    <pin id="PHY0_RXN" ball="H11" drive_strength="-" internal_resistor="-" />
+    
+    <pin id="PHY1_RXN" ball="F11" drive_strength="-" internal_resistor="-" />
+    <pin id="PHY1_RXP" ball="F12" drive_strength="-" internal_resistor="-" />
+    <pin id="PHY1_TXN" ball="E11" drive_strength="-" internal_resistor="-" />
+    <pin id="PHY1_TXP" ball="E12" drive_strength="-" internal_resistor="-" />
+    
+    <pin id="SQI_CLK" ball="H2" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="SQI_CS0N" ball="G1" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="SQI_MOSI" ball="H1" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="SQI_MISO" ball="G2" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="SQI_SIO2" ball="G3" drive_strength="low" internal_resistor="pu,enabled" />
+    <pin id="SQI_SIO3" ball="H3" drive_strength="low" internal_resistor="pu,enabled" />
+    
+    <pin id="MLED0" ball="L10" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MLED1" ball="K10" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MLED2" ball="J10" drive_strength="low" internal_resistor="pd,disabled" />
+    <pin id="MLED3" ball="K11" drive_strength="low" internal_resistor="pd,disabled" />
+    
+    <pin id="COM_IO0" ball="K7" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="COM_IO1" ball="K6" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MMIO0" ball="M7" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MMIO1" ball="L7" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MMIO2" ball="M6" drive_strength="low" internal_resistor="pd,enabled" /> 
+    <pin id="MMIO3" ball="L6" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MMIO4" ball="M5" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MMIO5" ball="L5" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MMIO6" ball="M4" drive_strength="low" internal_resistor="pd,enabled" />
+    <pin id="MMIO7" ball="L4" drive_strength="low" internal_resistor="pd,enabled" />
+    
+    <pin id="UART_RXD" ball="G10" drive_strength="-" internal_resistor="pd,enabled" />
+    <pin id="UART_TXD" ball="G11" drive_strength="low" internal_resistor="pd,enabled" />
+    
+    <pin id="RST_OUT_N" ball="L3" drive_strength="low" internal_resistor="pd,enabled" />
+</mux_pins>
+
+<signals>
+    <signal id="adc0_in0" name="adc0_in0" pin="MMIO4" />
+    <signal id="adc0_in1" name="adc0_in1" pin="MMIO5" />
+    
+    <signal id="adc1_in0" name="adc1_in0" pin="MMIO6" />
+    <signal id="adc1_in1" name="adc1_in1" pin="MMIO7" />
+    
+    <signal id="adc2_in0" name="adc2_in0" pin="MMIO0" />
+    <signal id="adc2_in1" name="adc2_in1" pin="MMIO1" />
+    <signal id="adc2_in7" name="adc2_in7" pin="MII0_TXD0" />
+    
+    <signal id="adc3_in0" name="adc3_in0" pin="MMIO2" />
+    <signal id="adc3_in1" name="adc3_in1" pin="MMIO3" />
+    <signal id="adc3_in2" name="adc3_in2" pin="COM_IO0" />
+    <signal id="adc3_in3" name="adc3_in3" pin="COM_IO1" />
+    <signal id="biss0_ma" name="biss0_ma" pin="MMIO3" mux="3" />
+    <signal id="biss0_mo" name="biss0_mo" pin="MMIO1" mux="3" />
+    <signal id="biss0_sl" name="biss0_sl" pin="MMIO0" mux="3" />
+    
+    <signal id="biss1_ma" name="biss1_ma" pin="MMIO7" mux="3" />
+    <signal id="biss1_mo" name="biss1_mo" pin="MMIO5" mux="3" />
+    <signal id="biss1_sl" name="biss1_sl" pin="MMIO4" mux="3" />
+    
+    <signal id="dpm0_spi_clk" name="dpm0_spi_clk" pin="HIF_D11" mux="8" />
+    <signal id="dpm0_spi_csn" name="dpm0_spi_csn" pin="HIF_D10" mux="8" />
+    <signal id="dpm0_spi_dirq" name="dpm0_spi_dirq" pin="HIF_D12" mux="8" />
+    <signal id="dpm0_spi_miso" name="dpm0_spi_miso" pin="HIF_D8" mux="8" />
+    <signal id="dpm0_spi_mosi" name="dpm0_spi_mosi" pin="HIF_D9" mux="8" />
+    <signal id="dpm0_spi_sirq" name="dpm0_spi_sirq" pin="HIF_D13" mux="8" />
+    <signal id="dpm0_sqi_sio2" name="dpm0_sqi_sio2" pin="HIF_D14" mux="8" />
+    <signal id="dpm0_sqi_sio3" name="dpm0_sqi_sio3" pin="HIF_D15" mux="8" />
+    
+    <signal id="endat0_clk" name="endat0_clk" pin="MMIO3" mux="2" />
+    <signal id="endat0_in" name="endat0_in" pin="MMIO0" mux="2" />
+    <signal id="endat0_oe" name="endat0_oe" pin="MMIO2" mux="2" />
+    <signal id="endat0_out" name="endat0_out" pin="MMIO1" mux="2" />
+    <signal id="endat1_clk" name="endat1_clk" pin="MMIO7" mux="2" />
+    <signal id="endat1_in" name="endat1_in" pin="MMIO4" mux="2" />
+    <signal id="endat1_oe" name="endat1_oe" pin="MMIO6" mux="2" />
+    <signal id="endat1_out" name="endat1_out" pin="MMIO5" mux="2" />
+    
+    <signal id="gpio8" name="gpio8" pin="COM_IO0" mux="1" />
+    <signal id="gpio9" name="gpio9" pin="COM_IO1" mux="1" />
+    <signal id="io_link0_in" name="io_link0_in" pin="MMIO0" mux="1" />
+    <signal id="io_link0_oe" name="io_link0_oe" pin="MMIO2" mux="1" />
+    <signal id="io_link0_out" name="io_link0_out" pin="MMIO1" mux="1" />
+    <signal id="io_link0_wakeup" name="io_link0_wakeup" pin="MMIO3" mux="1" />
+    
+    <signal id="io_link1_in" name="io_link1_in" pin="MMIO4" mux="1" />
+    <signal id="io_link1_oe" name="io_link1_oe" pin="MMIO6" mux="1" />
+    <signal id="io_link1_out" name="io_link1_out" pin="MMIO5" mux="1" />
+    <signal id="io_link1_wakeup" name="io_link1_wakeup" pin="MMIO7" mux="1" />
+    
+    <signal id="mled0" name="mled0" pin="MLED0" mux="0" />
+    <signal id="mled1" name="mled1" pin="MLED1" mux="0" />
+    <signal id="mled2" name="mled2" pin="MLED2" mux="0" />
+    <signal id="mled3" name="mled3" pin="MLED3" mux="0" />
+    
+    <signal id="mled4" name="mled4" pin="HIF_D8" mux="2" />
+    <signal id="mled5" name="mled5" pin="HIF_D9" mux="2" />
+    <signal id="mled6" name="mled6" pin="HIF_D10" mux="2" />
+    <signal id="mled7" name="mled7" pin="HIF_D11" mux="2" />
+    <signal id="mled8" name="mled8" pin="HIF_D12" mux="2" />
+    <signal id="mled9" name="mled9" pin="HIF_D13" mux="2" />
+    <signal id="mled10" name="mled10" pin="HIF_D14" mux="2" />
+    <signal id="mled11" name="mled11" pin="HIF_D15" mux="2" />
+    
+    <signal id="mmio0" name="mmio0" pin="MMIO0" mux="0" />
+    <signal id="mmio1" name="mmio1" pin="MMIO1" mux="0" />
+    <signal id="mmio2" name="mmio2" pin="MMIO2" mux="0" />
+    <signal id="mmio3" name="mmio3" pin="MMIO3" mux="0" />
+    <signal id="mmio4" name="mmio4" pin="MMIO4" mux="0" />
+    <signal id="mmio5" name="mmio5" pin="MMIO5" mux="0" />
+    <signal id="mmio6" name="mmio6" pin="MMIO6" mux="0" />
+    <signal id="mmio7" name="mmio7" pin="MMIO7" mux="0" />
+    
+    <signal id="mmio8" name="mmio8" pin="HIF_D8" mux="3" />
+    <signal id="mmio9" name="mmio9" pin="HIF_D9" mux="3" />
+    <signal id="mmio10" name="mmio10" pin="HIF_D10" mux="3" />
+    <signal id="mmio11" name="mmio11" pin="HIF_D11" mux="3" />
+    <signal id="mmio12" name="mmio12" pin="HIF_D12" mux="3" />
+    <signal id="mmio13" name="mmio13" pin="HIF_D13" mux="3" />
+    <signal id="mmio14" name="mmio14" pin="HIF_D14" mux="3" />
+    <signal id="mmio15" name="mmio15" pin="HIF_D15" mux="3" />
+    <signal id="mmio16" name="mmio16" pin="HIF_RDN" mux="3" />
+    <signal id="mmio17" name="mmio17" pin="HIF_DIRQ" mux="3" />
+    
+    <signal id="phy0_rxn" name="phy0_rxn" pin="PHY0_RXN" mux="0" />
+    <signal id="phy0_rxp" name="phy0_rxp" pin="PHY0_RXP" mux="0" />
+    <signal id="phy0_txn" name="phy0_txn" pin="PHY0_TXN" mux="0" />
+    <signal id="phy0_txp" name="phy0_txp" pin="PHY0_TXP" mux="0" />
+    
+    <signal id="phy1_rxn" name="phy1_rxn" pin="PHY1_RXN" mux="0" />
+    <signal id="phy1_rxp" name="phy1_rxp" pin="PHY1_RXP" mux="0" />
+    <signal id="phy1_txn" name="phy1_txn" pin="PHY1_TXN" mux="0" />
+    <signal id="phy1_txp" name="phy1_txp" pin="PHY1_TXP" mux="0" />
+    
+    <signal id="pio_app9" name="pio_app9" pin="MII0_RXD1" mux="6" />
+    <signal id="pio_app10" name="pio_app10" pin="MII0_RXD2" mux="6" />
+    <signal id="pio_app12" name="pio_app12" pin="MII0_TXD0" mux="6" />
+    <signal id="pio_app17" name="pio_app17" pin="MII1_RXD1" mux="6" />
+    <signal id="pio_app18" name="pio_app18" pin="MII1_RXD2" mux="6" />
+    <signal id="pio_app20" name="pio_app20" pin="MII1_TXD0" mux="6" />
+    <signal id="pio_app21" name="pio_app21" pin="MII1_TXD1" mux="6" />
+    <signal id="pio_app22" name="pio_app22" pin="MII1_TXD2" mux="6" />
+    <signal id="pio_app23" name="pio_app23" pin="MII1_TXD3" mux="6" />
+    <signal id="pio_app27" name="pio_app27" pin="RST_OUT_N" mux="6" />
+    <signal id="rst_out_n" name="rst_out_n" pin="RST_OUT_N" mux="0" />
+    
+    <signal id="sd_a0" name="sd_a0" pin="HIF_A0" mux="10" />
+    <signal id="sd_a1" name="sd_a1" pin="HIF_A1" mux="10" />
+    <signal id="sd_a2" name="sd_a2" pin="HIF_A2" mux="10" />
+    <signal id="sd_a3" name="sd_a3" pin="HIF_A3" mux="10" />
+    <signal id="sd_a4" name="sd_a4" pin="HIF_A4" mux="10" />
+    <signal id="sd_a5" name="sd_a5" pin="HIF_A5" mux="10" />
+    <signal id="sd_a6" name="sd_a6" pin="HIF_A6" mux="10" />
+    <signal id="sd_a7" name="sd_a7" pin="HIF_A7" mux="10" />
+    <signal id="sd_a8" name="sd_a8" pin="HIF_A8" mux="10" />
+    <signal id="sd_a9" name="sd_a9" pin="HIF_A9" mux="10" />
+    <signal id="sd_a10" name="sd_a10" pin="HIF_A10" mux="10" />
+    <signal id="sd_a11" name="sd_a11" pin="HIF_A11" mux="10" />
+    <signal id="sd_a12" name="sd_a12" pin="HIF_A12" mux="10" />
+    <signal id="sd_ba0" name="sd_ba0" pin="HIF_A13" mux="10" />
+    <signal id="sd_ba1" name="sd_ba1" pin="HIF_A14" mux="10" />
+    <signal id="sd_casn" name="sd_casn" pin="HIF_A16" mux="10" />
+    <signal id="sd_cke" name="sd_cke" pin="HIF_RDY" mux="10" />
+    <signal id="sd_clk" name="sd_clk" pin="HIF_SDCLK" mux="10" />
+    <signal id="sd_csn" name="sd_csn" pin="HIF_CSN" mux="10" />
+    <signal id="sd_d0" name="sd_d0" pin="MII1_RXER" mux="10" />
+    <signal id="sd_d1" name="sd_d1" pin="MII1_CRS" mux="10" />
+    <signal id="sd_d2" name="sd_d2" pin="MII1_COL" mux="10" />
+    <signal id="sd_d3" name="sd_d3" pin="PHY0_LED_LINK_IN" mux="10" />
+    <signal id="sd_d4" name="sd_d4" pin="PHY1_LED_LINK_IN" mux="10" />
+    <signal id="sd_d5" name="sd_d5" pin="MII0_TXEN" mux="10" />
+    <signal id="sd_d6" name="sd_d6" pin="MII0_COL" mux="10" />
+    <signal id="sd_d7" name="sd_d7" pin="MII0_CRS" mux="10" />
+    <signal id="sd_d8" name="sd_d8" pin="HIF_D0" mux="10" />
+    <signal id="sd_d9" name="sd_d9" pin="HIF_D1" mux="10" />
+    <signal id="sd_d10" name="sd_d10" pin="HIF_D2" mux="10" />
+    <signal id="sd_d11" name="sd_d11" pin="HIF_D3" mux="10" />
+    <signal id="sd_d12" name="sd_d12" pin="HIF_D4" mux="10" />
+    <signal id="sd_d13" name="sd_d13" pin="HIF_D5" mux="10" />
+    <signal id="sd_d14" name="sd_d14" pin="HIF_D6" mux="10" />
+    <signal id="sd_d15" name="sd_d15" pin="HIF_D7" mux="10" />
+    <signal id="sd_dqm0" name="sd_dqm0" pin="HIF_A17" mux="10" />
+    <signal id="sd_dqm1" name="sd_dqm1" pin="HIF_BHEN" mux="10" />
+    <signal id="sd_rasn" name="sd_rasn" pin="HIF_A15" mux="10" />
+    <signal id="sd_wen" name="sd_wen" pin="HIF_WRN" mux="10" />
+    
+    <signal id="sqi_clk" name="sqi_clk" pin="SQI_CLK" mux="0" />
+    <signal id="sqi_cs0n" name="sqi_cs0n" pin="SQI_CS0N" mux="0" />
+    <signal id="sqi_cs2n" name="sqi_cs2n" pin="SQI_SIO3" mux="1" />
+    <signal id="sqi_miso" name="sqi_miso" pin="SQI_MISO" mux="0" />
+    <signal id="sqi_mosi" name="sqi_mosi" pin="SQI_MOSI" mux="0" />
+    <signal id="sqi_sio2" name="sqi_sio2" pin="SQI_SIO2" mux="0" />
+    <signal id="sqi_sio3" name="sqi_sio3" pin="SQI_SIO3" mux="0" />
+    
+    <signal id="sqi0_app_clk_b" name="sqi0_app_clk_b" pin="MII1_TXD0" mux="5" />
+    <signal id="sqi0_app_cs0n_b" name="sqi0_app_cs0n_b" pin="MII1_TXD1" mux="5" />
+    <signal id="sqi0_app_miso_b" name="sqi0_app_miso_b" pin="MII1_TXD2" mux="5" />
+    <signal id="sqi0_app_mosi_b" name="sqi0_app_mosi_b" pin="MII1_TXD3" mux="5" />
+    <signal id="sqi0_app_sio2_b" name="sqi0_app_sio2_b" pin="MII1_RXD1" mux="5" />
+    <signal id="sqi0_app_sio3_b" name="sqi0_app_sio3_b" pin="MII1_RXD2" mux="5" />
+    
+    <signal id="sqi1_app_clk" name="sqi1_app_clk" pin="HIF_D13" mux="1" />
+    <signal id="sqi1_app_cs0n" name="sqi1_app_cs0n" pin="HIF_D12" mux="1" />
+    <signal id="sqi1_app_miso" name="sqi1_app_miso" pin="HIF_D14" mux="1" />
+    <signal id="sqi1_app_mosi" name="sqi1_app_mosi" pin="HIF_D15" mux="1" />
+    <signal id="sqi1_app_sio2" name="sqi1_app_sio2" pin="HIF_RDN" mux="1" />
+    <signal id="sqi1_app_sio3" name="sqi1_app_sio3" pin="HIF_DIRQ" mux="1" />
+    
+    <signal id="sqirom_clk" name="sqirom_clk" pin="SQI_CLK" mux="2" />
+    <signal id="sqirom_csn" name="sqirom_csn" pin="SQI_CS0N" mux="2" />
+    <signal id="sqirom_sio0" name="sqirom_sio0" pin="SQI_MOSI" mux="2" />
+    <signal id="sqirom_sio1" name="sqirom_sio1" pin="SQI_MISO" mux="2" />
+    <signal id="sqirom_sio2" name="sqirom_sio2" pin="SQI_SIO2" mux="2" />
+    <signal id="sqirom_sio3" name="sqirom_sio3" pin="SQI_SIO3" mux="2" />
+    
+    <signal id="trace_data0" name="trace_data0" pin="MLED0" mux="1" />
+    <signal id="trace_data1" name="trace_data1" pin="MLED1" mux="1" />
+    <signal id="trace_data2" name="trace_data2" pin="MLED2" mux="1" />
+    <signal id="trace_data3" name="trace_data3" pin="MLED3" mux="1" />
+    
+    <signal id="uart_rxd" name="uart_rxd" pin="UART_RXD" mux="0" />
+    <signal id="uart_txd" name="uart_txd" pin="UART_TXD" mux="0" />
+    
+    <signal id="xm0_io0" name="xm0_io0" pin="MII0_RXD2" mux="2" />
+    <signal id="xm0_rx" name="xm0_rx" pin="MII0_RXD0" mux="2" />
+    <signal id="xm0_tx" name="xm0_tx" pin="MII0_RXD1" mux="2" />
+    <signal id="xm0_txoe" name="xm0_txoe" pin="MII0_TXD0" mux="2" />
+    </signals>
+
+
+<mmio_signals>
+    <mmio_signal id="xc_sample0" name="xc_sample0" />
+    <mmio_signal id="xc_sample1" name="xc_sample1" />
+    
+    <mmio_signal id="xc_trigger0" name="xc_trigger0" />
+    <mmio_signal id="xc_trigger1" name="xc_trigger1" />
+    
+    <mmio_signal id="can0_app_rx" name="can0_app_rx" />
+    <mmio_signal id="can0_app_tx" name="can0_app_tx" />
+    
+    <mmio_signal id="can1_app_rx" name="can1_app_rx" />
+    <mmio_signal id="can1_app_tx" name="can1_app_tx" />
+    
+    <mmio_signal id="i2c_xpic_app_scl" name="i2c_xpic_app_scl" />
+    <mmio_signal id="i2c_xpic_app_sda" name="i2c_xpic_app_sda" />
+    
+    <mmio_signal id="i2c_app_scl" name="i2c_app_scl" />
+    <mmio_signal id="i2c_app_sda" name="i2c_app_sda" />
+    
+    <mmio_signal id="spi_xpic_app_clk" name="spi_xpic_app_clk" />
+    <mmio_signal id="spi_xpic_app_cs0n" name="spi_xpic_app_cs0n" />
+    <mmio_signal id="spi_xpic_app_cs1n" name="spi_xpic_app_cs1n" />
+    <mmio_signal id="spi_xpic_app_cs2n" name="spi_xpic_app_cs2n" />
+    <mmio_signal id="spi_xpic_app_miso" name="spi_xpic_app_miso" />
+    <mmio_signal id="spi_xpic_app_mosi" name="spi_xpic_app_mosi" />
+    
+    <mmio_signal id="spi1_app_clk" name="spi1_app_clk" />
+    <mmio_signal id="spi1_app_cs0n" name="spi1_app_cs0n" />
+    <mmio_signal id="spi1_app_cs1n" name="spi1_app_cs1n" />
+    <mmio_signal id="spi1_app_cs2n" name="spi1_app_cs2n" />
+    <mmio_signal id="spi1_app_miso" name="spi1_app_miso" />
+    <mmio_signal id="spi1_app_mosi" name="spi1_app_mosi" />
+    
+    <mmio_signal id="uart_xpic_app_rxd" name="uart_xpic_app_rxd" />
+    <mmio_signal id="uart_xpic_app_txd" name="uart_xpic_app_txd" />
+    <mmio_signal id="uart_xpic_app_rtsn" name="uart_xpic_app_rtsn" />
+    <mmio_signal id="uart_xpic_app_ctsn" name="uart_xpic_app_ctsn" />
+    
+    <mmio_signal id="uart_app_rxd" name="uart_app_rxd" />
+    <mmio_signal id="uart_app_txd" name="uart_app_txd" />
+    <mmio_signal id="uart_app_rtsn" name="uart_app_rtsn" />
+    <mmio_signal id="uart_app_ctsn" name="uart_app_ctsn" />
+    
+    <mmio_signal id="gpio0" name="gpio0" />
+    <mmio_signal id="gpio1" name="gpio1" />
+    <mmio_signal id="gpio2" name="gpio2" />
+    <mmio_signal id="gpio3" name="gpio3" />
+    <mmio_signal id="gpio4" name="gpio4" />
+    <mmio_signal id="gpio5" name="gpio5" />
+    <mmio_signal id="gpio6" name="gpio6" />
+    <mmio_signal id="gpio7" name="gpio7" />
+    
+    <mmio_signal id="wdg_act" name="wdg_act" />
+    <mmio_signal id="en_in" name="en_in" />
+    
+    <mmio_signal id="eth_mdc" name="eth_mdc" />
+    <mmio_signal id="eth_mdio" name="eth_mdio" />
+</mmio_signals>
+
+
+<peripherals_list>
+
+    <peripheral id="general" name="General Configuration">
+        <parameters>
+            <param id="struct_version" name="Version of the HWC info structure" type="uint8" value="2" read_only="true" />
+            <param id="file_version" name="Version of the hardware configuration" type="uint8" value="0" />
+            <param id="file_text" name="Description of the hardware configuration" type="string" value="" max_length="108" />
+        
+            <param id="app_cpu_enable" name="Enable application CPU" type="enum" value="true">
+                <enum_value value="true" name="true" />
+                <enum_value value="false" name="false" />
+            </param>
+            <param id="idpm_enable" name="Enable internal DPM" type="enum" value="true">
+                <enum_value value="true" name="true" />
+                <enum_value value="false" name="false" />
+            </param>
+            <param id="firewall_sqi_flash" name="SQI XiP Flash Firewall" type="enum" value="com_only">
+                <enum_value value="com_only" name="COM has read/write access, APP has no access" />
+                <enum_value value="app_only" name="APP has read/write access, COM has no access" />
+                
+                
+            </param>
+            <param id="firewall_sdram" name="Ext SDRAM Firewall" type="enum" value="com_and_app">
+                <enum_value value="com_only" name="COM has read/write access, APP has no access" />
+                <enum_value value="app_only" name="APP has read/write access, COM has no access" />
+                <enum_value value="com_and_app" name="COM and APP have read/write access (split mode)" />
+                
+            </param>
+            
+            <param id="firewall_extmem" name="Ext SRAM/Flash Firewall" type="enum" value="app_only" read_only="true">
+                <enum_value value="app_only" name="APP has read/write access, COM has no access" />
+                
+            </param>
+            <param id="firewall_uart" name="UART Firewall" type="enum" value="com_only">
+                <enum_value value="com_only" name="COM has read/write access, APP has no access" />
+                <enum_value value="app_only" name="APP has read/write access, COM has no access" />
+                
+                
+            </param>
+            <param id="firewall_pad_ctrl" name="PAD CTRL Firewall" type="enum" value="no_access">
+                <enum_value value="app_only" name="APP has read/write access, COM has no access" />
+                <enum_value value="no_access" name="COM and APP have no access" />
+                
+            </param>
+            <param id="firewall_crypt_system" name="Crypto Core Firewall" type="enum" value="com_only" read_only="true">
+                <enum_value value="com_only" name="COM has read/write access, APP has no access" />
+            </param>
+            <param id="firewall_debug_slave" name="Debug Firewall" type="enum" value="no_access" read_only="true">
+                <enum_value value="no_access" name="COM and APP have no access" />
+            </param>
+            <param id="firewall_eth_mac" name="ETH MAC Firewall" type="enum" value="app_only" read_only="true">
+                <enum_value value="app_only" name="APP has read/write access, COM has no access" />
+            </param>
+            <param id="firewall_madc" name="MADC Firewall" type="enum" value="app_only" read_only="true">
+                <enum_value value="app_only" name="APP has read/write access, COM has no access" />
+            </param>
+        </parameters>
+    </peripheral>
+    
+    <peripheral id="uart" name="UART">
+        <signals>
+            <signal id="uart_rxd" />
+            <signal id="uart_txd" />
+            </signals>
+        <configurations>
+            <config id="uart" name="UART">
+                </config>
+            </configurations>
+    </peripheral>
+    
+    <peripheral id="phy0" name="PHY0">
+        <signals>
+            
+            <signal id="phy0_rxn" />
+            <signal id="phy0_txn" />
+            <signal id="phy0_rxp" />
+            <signal id="phy0_txp" />
+            
+            <signal id="mled0" drive_strength="high" />
+            <signal id="mled1" drive_strength="high" />
+            <signal id="mled2" drive_strength="high" />
+        </signals>
+        <parameters>
+            <param id="hw_option" name="Hardware Assembly Option (xC Port 0)" type="enum" value="0x0080" read_only="true">
+                <enum_value value="0x0080" name="Realtime Ethernet" />
+            </param>
+        </parameters>
+    </peripheral>
+    
+    <peripheral id="phy0_phy1" name="DUAL PHY">
+        <signals>
+            
+            <signal id="phy0_rxn" />
+            <signal id="phy0_txn" />
+            <signal id="phy0_rxp" />
+            <signal id="phy0_txp" />
+            
+            <signal id="phy1_rxn" />
+            <signal id="phy1_txn" />
+            <signal id="phy1_rxp" />
+            <signal id="phy1_txp" />
+            
+            <signal id="mled0" drive_strength="high" />
+            <signal id="mled1" drive_strength="high" />
+            <signal id="mled2" drive_strength="high" />
+            <signal id="mled3" drive_strength="high" />
+        </signals>
+        <parameters>
+            <param id="hw_option" name="Hardware Assembly Option (xC Ports 0/1)" type="enum" value="0x0080" read_only="true">
+                <enum_value value="0x0080" name="Realtime Ethernet" />
+            </param>
+        </parameters>
+    </peripheral>
+    
+    <peripheral id="xm0" name="XM0">
+        <signals>
+            
+            <signal id="xm0_rx" />
+            <signal id="xm0_tx" />
+            <signal id="xm0_io0" optional="true" />
+            
+            <signal id="mled0" drive_strength="high" />
+            <signal id="mled1" drive_strength="high" />
+        </signals>
+        <parameters>
+            <param id="hw_option" name="Hardware Assembly Option (xC Port 0)" type="uint16" />
+        </parameters>
+        <configurations>
+            <config id="xm0_cn" name="CAN">
+                <signals>
+                    <signal id="xm0_io0" selected="false" optional="false" />
+                </signals>
+                <parameters>
+                    <param id="hw_option" value="0x0030" read_only="true" />
+                </parameters>
+            </config>
+            
+            <config id="xm0_dn" name="DeviceNet">
+                <signals>
+                    <signal id="xm0_io0" selected="true" optional="false" />
+                </signals>
+                <parameters>
+                    <param id="hw_option" value="0x0040" read_only="true" />
+                </parameters>
+            </config>
+            
+            <config id="xm0_dp" name="Profibus">
+                <signals>
+                    <signal id="xm0_io0" selected="true" optional="false" />
+                </signals>
+                <parameters>
+                    <param id="hw_option" value="0x0050" read_only="true" />
+                </parameters>
+            </config>
+            
+            <config id="xm0_cc" name="CC-Link">
+                <signals>
+                    <signal id="xm0_io0" selected="true" optional="false" />
+                </signals>
+                <parameters>
+                    <param id="hw_option" value="0x0070" read_only="true" />
+                </parameters>
+            </config>
+            
+            <config id="xm0_custom" name="Custom" />
+
+            <config id="default" name="Default (deprecated)">
+                <signals>
+                    <signal id="xm0_io0" selected="true" optional="false" />
+                </signals>
+                <parameters>
+                    <param id="hw_option" value="0x0050" read_only="true" />
+                </parameters>
+            </config>
+            
+        </configurations>
+    </peripheral>
+    
+    <peripheral id="spm0" name="SPM0">
+        <signals>
+            <signal id="dpm0_spi_miso" drive_strength="high" />
+            <signal id="dpm0_spi_mosi" drive_strength="low" />
+            <signal id="dpm0_spi_csn" />
+            <signal id="dpm0_spi_clk" />
+            <signal id="dpm0_spi_dirq" optional="true" />
+            <signal id="dpm0_spi_sirq" optional="true" />
+            <signal id="dpm0_sqi_sio2" drive_strength="high" />
+            <signal id="dpm0_sqi_sio3" drive_strength="high" />
+        </signals>
+        <parameters>
+            <param id="mode" name="SPI/SQI Mode" type="enum" value="3">
+                <enum_value value="0" name="Mode 0" />
+                <enum_value value="1" name="Mode 1" />
+                <enum_value value="2" name="Mode 2" />
+                <enum_value value="3" name="Mode 3 (default)" />
+            </param>
+            <param id="sdpm_miso_early" name="Early MISO generation" type="enum" value="0">
+                <enum_value value="0" name="Change MISO on the clock edge following the sampling edge (default)" />
+                <enum_value value="1" name="Change MISO on the sampling edge" />
+            </param>
+        </parameters>
+        <configurations>
+            <config id="spm_spi" name="SPI">
+                <signals>
+                    <signal id="dpm0_spi_dirq" selected="true" />
+                    <signal id="dpm0_spi_sirq" selected="false" />
+                    <signal id="dpm0_sqi_sio2" selected="false" />
+                    <signal id="dpm0_sqi_sio3" selected="false" />
+                </signals>
+            </config>
+            <config id="spm_sqi" name="SQI">
+                <signals>
+                    <signal id="dpm0_spi_mosi" drive_strength="high" />
+                    <signal id="dpm0_spi_dirq" selected="true" />
+                    <signal id="dpm0_spi_sirq" selected="false" />
+                    <signal id="dpm0_sqi_sio2" selected="true" />
+                    <signal id="dpm0_sqi_sio3" selected="true" />
+                </signals>
+            </config>
+        </configurations>
+    </peripheral>
+    
+    <peripheral id="sdram_16_bit" name="SDRAM16">
+        <signals>
+            <signal id="sd_a0" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a1" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a2" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a3" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a4" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a5" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a6" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a7" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a8" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a9" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a10" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a11" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_a12" drive_strength="high" internal_resistor="pu,disabled" optional="true" />
+            <signal id="sd_ba0" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_ba1" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_rasn" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_casn" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_dqm0" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_dqm1" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_csn" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_d0" drive_strength="high" internal_resistor="pd,enabled" />
+            <signal id="sd_d1" drive_strength="high" internal_resistor="pd,enabled" />
+            <signal id="sd_d2" drive_strength="high" internal_resistor="pd,enabled" />
+            <signal id="sd_d3" drive_strength="high" internal_resistor="pd,enabled" />
+            <signal id="sd_d4" drive_strength="high" internal_resistor="pd,enabled" />
+            <signal id="sd_d5" drive_strength="high" internal_resistor="pd,enabled" />
+            <signal id="sd_d6" drive_strength="high" internal_resistor="pd,enabled" />
+            <signal id="sd_d7" drive_strength="high" internal_resistor="pd,enabled" />
+            <signal id="sd_d8" drive_strength="high" internal_resistor="pu,enabled" />
+            <signal id="sd_d9" drive_strength="high" internal_resistor="pu,enabled" />
+            <signal id="sd_d10" drive_strength="high" internal_resistor="pu,enabled" />
+            <signal id="sd_d11" drive_strength="high" internal_resistor="pu,enabled" />
+            <signal id="sd_d12" drive_strength="high" internal_resistor="pu,enabled" />
+            <signal id="sd_d13" drive_strength="high" internal_resistor="pu,enabled" />
+            <signal id="sd_d14" drive_strength="high" internal_resistor="pu,enabled" />
+            <signal id="sd_d15" drive_strength="high" internal_resistor="pu,enabled" />
+            <signal id="sd_cke" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_clk" drive_strength="high" internal_resistor="pu,disabled" />
+            <signal id="sd_wen" drive_strength="high" internal_resistor="pu,disabled" />
+        </signals>
+        <parameters>
+            <param id="general_ctrl" name="General Control" type="uint32" />
+            <param id="timing_ctrl" name="Timing Control" type="uint32" />
+            <param id="mode_register" name="Mode Register" type="uint32" />
+            <param id="sdram_size" name="Size (MByte)" type="uint8" />
+        </parameters>
+        <configurations>
+            <config id="custom" name="Custom">
+                <signals>
+                    <signal id="sd_a0" />
+                    <signal id="sd_a1" />
+                    <signal id="sd_a2" />
+                    <signal id="sd_a3" />
+                    <signal id="sd_a4" />
+                    <signal id="sd_a5" />
+                    <signal id="sd_a6" />
+                    <signal id="sd_a7" />
+                    <signal id="sd_a8" />
+                    <signal id="sd_a9" />
+                    <signal id="sd_a10" />
+                    <signal id="sd_a11" />
+                    <signal id="sd_a12" optional="true" />
+                    <signal id="sd_ba0" />
+                    <signal id="sd_ba1" />
+                    <signal id="sd_rasn" />
+                    <signal id="sd_casn" />
+                    <signal id="sd_dqm0" />
+                    <signal id="sd_dqm1" />
+                    <signal id="sd_csn" />
+                    <signal id="sd_d0" />
+                    <signal id="sd_d1" />
+                    <signal id="sd_d2" />
+                    <signal id="sd_d3" />
+                    <signal id="sd_d4" />
+                    <signal id="sd_d5" />
+                    <signal id="sd_d6" />
+                    <signal id="sd_d7" />
+                    <signal id="sd_d8" />
+                    <signal id="sd_d9" />
+                    <signal id="sd_d10" />
+                    <signal id="sd_d11" />
+                    <signal id="sd_d12" />
+                    <signal id="sd_d13" />
+                    <signal id="sd_d14" />
+                    <signal id="sd_d15" />
+                    <signal id="sd_cke" />
+                    <signal id="sd_clk" />
+                    <signal id="sd_wen" />
+                </signals>
+            </config>
+        </configurations>
+    </peripheral>
+    
+    
+    
+    <peripheral id="sqi" name="SQI FLASH">
+        <signals>
+            <signal id="sqi_clk" />
+            <signal id="sqi_cs0n" />
+            <signal id="sqi_miso" />
+            <signal id="sqi_mosi" />
+            <signal id="sqi_sio2" />
+            <signal id="sqi_sio3" />
+        </signals>
+        <parameters>
+            
+            <param id="freq_fifo_mhz" name="FIFO mode Frequency (MHz)" type="uint32" />
+            
+            <param id="xip_possible" name="XIP possible" type="enum">
+                <enum_value value="true" name="Yes" />
+                <enum_value value="false" name="No" />
+            </param> 
+            
+            <param id="freq_xip_mhz" name="XIP mode Frequency (MHz)" type="uint32" />
+            
+            <param id="bWriteEnable" name="Write enable instruction" type="uint8" />
+            <param id="bPageProgram" name="Page program instruction" type="uint8" />
+            <param id="bSectorErase" name="Sector erase instruction" type="uint8" />
+            <param id="bRead" name="Read data instruction 1Bit Mode" type="uint8" />
+            <param id="bQuadRead" name="Fast read quad I/O instruction 4Bit Mode" type="uint8" />
+            <param id="bReadStatus1" name="Read status register 1 instruction" type="uint8" />
+            <param id="bWriteStatus1" name="Write status register 1 instruction" type="uint8" />
+            <param id="bReadStatus2" name="Read status register 2 instruction" type="uint8" />
+            <param id="bWriteStatus2" name="Write status register 2 instruction" type="uint8" />
+            <param id="bAddrBytes" name="Number of address bytes" type="uint8" />
+            
+            <param id="bQERType" name="Quad enable requirements (JESD216B Ch. 6.4.18)" type="enum">   
+                <enum_value value="1" name="001b" /> 
+                <enum_value value="2" name="010b" /> 
+                <enum_value value="3" name="011b" /> 
+                <enum_value value="4" name="100b" /> 
+                <enum_value value="5" name="101b" />
+            </param>
+            
+            <param id="bEntryType" name="0-4-4 Mode Entry Method (JESD216B Ch. 6.4.18)" type="enum">
+                <enum_value value="1" name="xxx1b" />
+                <enum_value value="2" name="xx1xb" />
+            </param>
+            
+            <param id="bExitType" name="0-4-4 Mode Exit Method (JESD216B Ch. 6.4.18)" type="enum">
+                <enum_value value="1" name="xx_xxx1b" />
+                <enum_value value="2" name="xx_1xxxb" />
+            </param>
+            
+            <param id="bPollingMethod" name="Status Register Polling Device Busy  (JESD216B Ch. 6.4.17)" type="enum">
+                <enum_value value="1" name="xx_xx1xb" />
+                <enum_value value="2" name="xx_xxx1b" />
+            </param>
+            
+            <param id="bSpiFifoMode" name="SPI Mode" type="enum">
+                <enum_value value="0" name="Mode 0" />
+                <enum_value value="1" name="Mode 1" />
+                <enum_value value="2" name="Mode 2" />
+                <enum_value value="3" name="Mode 3" />
+            </param>
+
+            <param id="ulPageSize" name="Page size in bytes" type="uint32" />
+            <param id="ulSectorSize" name="Sector size in bytes" type="uint32" />
+            <param id="ulSectorCount" name="Number of sectors" type="uint32" />
+            
+            
+            <param id="t_csh" name="Min. SQI chip select high (idle) time" type="enum">
+                <enum_value value="0" name="1 cycle" />
+                <enum_value value="1" name="2 cycles" />
+                <enum_value value="2" name="3 cycles" />
+                <enum_value value="3" name="4 cycles" />
+            </param>
+
+            <param id="cmd_byte" name="Command" type="uint8" />
+
+            <param id="addr_nibbles" name="Number of address nibbles" type="enum" value="1">
+                <enum_value value="0" name="5 nibbles" />
+                <enum_value value="1" name="6 nibbles" />
+                <enum_value value="2" name="7 nibbles" />
+                <enum_value value="3" name="8 nibbles" />
+            </param>
+            
+            <param id="addr_before_cmd" name="Address before command" type="enum" value="0">
+                <enum_value value="1" name="Yes" />
+                <enum_value value="0" name="No" />
+            </param> 
+
+            <param id="dummy_cycles" name="Number of dummy cycles before sampling data" type="enum" value="2">
+                <enum_value value="0" name="0 cycles" />
+                <enum_value value="1" name="1 cycle" />
+                <enum_value value="2" name="2 cycles" />
+                <enum_value value="3" name="3 cycles" />
+                <enum_value value="4" name="4 cycles" />
+                <enum_value value="5" name="5 cycles" />
+                <enum_value value="6" name="6 cycles" />
+                <enum_value value="7" name="7 cycles" />
+                <enum_value value="8" name="8 cycles" />
+                <enum_value value="9" name="9 cycles" />
+                <enum_value value="10" name="10 cycles" />
+                <enum_value value="11" name="11 cycles" />
+                <enum_value value="12" name="12 cycles" />
+                <enum_value value="13" name="13 cycles" />
+                <enum_value value="14" name="14 cycles" />
+                <enum_value value="15" name="15 cycles" />
+            </param>
+            
+        </parameters>
+        <configurations>
+            <config id="custom" name="Custom">
+            </config>
+        </configurations>    
+    </peripheral>
+    
+    
+    <peripheral id="sqi0_b_spi" name="SQI0_B SPI">
+        <signals>
+            <signal id="sqi0_app_clk_b" />
+            <signal id="sqi0_app_cs0n_b" />
+            <signal id="sqi0_app_miso_b" />
+            <signal id="sqi0_app_mosi_b" />
+            </signals>
+    </peripheral>
+    
+    <peripheral id="sqi0_b_sqi" name="SQI0_B_SQI">
+        <signals>
+            <signal id="sqi0_app_clk_b" />
+            <signal id="sqi0_app_cs0n_b" />
+            <signal id="sqi0_app_miso_b" />
+            <signal id="sqi0_app_mosi_b" />
+            <signal id="sqi0_app_sio2_b" />
+            <signal id="sqi0_app_sio3_b" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="sqi1" name="SQI1">
+        <signals>
+            <signal id="sqi1_app_clk" />
+            <signal id="sqi1_app_cs0n" />
+            <signal id="sqi1_app_miso" />
+            <signal id="sqi1_app_mosi" />
+            <signal id="sqi1_app_sio2" />
+            <signal id="sqi1_app_sio3" />
+        </signals>
+        <configurations>
+            <config id="sqi1_spi" name="SPI">
+                <signals>
+                    <signal id="sqi1_app_sio2" selected="false" />
+                    <signal id="sqi1_app_sio3" selected="false" />
+                </signals>
+            </config>
+            <config id="sqi1_sqi" name="SQI">
+                <signals>
+                    <signal id="sqi1_app_sio2" selected="true" />
+                    <signal id="sqi1_app_sio3" selected="true" />
+                </signals>
+            </config>
+        </configurations>
+    </peripheral>
+    
+    
+    <peripheral id="mmio0" name="MMIO0">
+        <signals>
+            <signal id="mmio0" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio1" name="MMIO1">
+        <signals>
+            <signal id="mmio1" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio2" name="MMIO2">
+        <signals>
+            <signal id="mmio2" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio3" name="MMIO3">
+        <signals>
+            <signal id="mmio3" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio4" name="MMIO4">
+        <signals>
+            <signal id="mmio4" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio5" name="MMIO5">
+        <signals>
+            <signal id="mmio5" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio6" name="MMIO6">
+        <signals>
+            <signal id="mmio6" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio7" name="MMIO7">
+        <signals>
+            <signal id="mmio7" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio8" name="MMIO8">
+        <signals>
+            <signal id="mmio8" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio9" name="MMIO9">
+        <signals>
+            <signal id="mmio9" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio10" name="MMIO10">
+        <signals>
+            <signal id="mmio10" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio11" name="MMIO11">
+        <signals>
+            <signal id="mmio11" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio12" name="MMIO12">
+        <signals>
+            <signal id="mmio12" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio13" name="MMIO13">
+        <signals>
+            <signal id="mmio13" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio14" name="MMIO14">
+        <signals>
+            <signal id="mmio14" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio15" name="MMIO15">
+        <signals>
+            <signal id="mmio15" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio16" name="MMIO16">
+        <signals>
+            <signal id="mmio16" />
+        </signals>
+    </peripheral>
+    <peripheral id="mmio17" name="MMIO17">
+        <signals>
+            <signal id="mmio17" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="io_link0" name="IO_Link0">
+        <signals>
+            <signal id="io_link0_in" />
+            <signal id="io_link0_out" />
+            <signal id="io_link0_oe" />
+            <signal id="io_link0_wakeup" optional="true" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="io_link1" name="IO_Link1">
+        <signals>
+            <signal id="io_link1_in" />
+            <signal id="io_link1_out" />
+            <signal id="io_link1_oe" />
+            <signal id="io_link1_wakeup" optional="true" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="mled4" name="MLED4">
+        <signals>
+            <signal id="mled4" />
+        </signals>
+    </peripheral>
+    <peripheral id="mled5" name="MLED5">
+        <signals>
+            <signal id="mled5" />
+        </signals>
+    </peripheral>
+    <peripheral id="mled6" name="MLED6">
+        <signals>
+            <signal id="mled6" />
+        </signals>
+    </peripheral>
+    <peripheral id="mled7" name="MLED7">
+        <signals>
+            <signal id="mled7" />
+        </signals>
+    </peripheral>
+    <peripheral id="mled8" name="MLED8">
+        <signals>
+            <signal id="mled8" />
+        </signals>
+    </peripheral>
+    <peripheral id="mled9" name="MLED9">
+        <signals>
+            <signal id="mled9" />
+        </signals>
+    </peripheral>
+    <peripheral id="mled10" name="MLED10">
+        <signals>
+            <signal id="mled10" />
+        </signals>
+    </peripheral>
+    <peripheral id="mled11" name="MLED11">
+        <signals>
+            <signal id="mled11" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="pio9" name="PIO9">
+        <signals>
+            <signal id="pio_app9" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio10" name="PIO10">
+        <signals>
+            <signal id="pio_app10" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio12" name="PIO12">
+        <signals>
+            <signal id="pio_app12" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio17" name="PIO17">
+        <signals>
+            <signal id="pio_app17" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio18" name="PIO18">
+        <signals>
+            <signal id="pio_app18" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio20" name="PIO20">
+        <signals>
+            <signal id="pio_app20" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio21" name="PIO21">
+        <signals>
+            <signal id="pio_app21" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio22" name="PIO22">
+        <signals>
+            <signal id="pio_app22" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio23" name="PIO23">
+        <signals>
+            <signal id="pio_app23" />
+        </signals>
+    </peripheral>
+    <peripheral id="pio27" name="PIO27">
+        <signals>
+            <signal id="pio_app27" />
+        </signals>
+    </peripheral>
+    <peripheral id="biss0" name="BiSS0">
+        <signals>
+            <signal id="biss0_sl" />
+            <signal id="biss0_mo" />
+            <signal id="biss0_ma" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="biss1" name="BiSS1">
+        <signals>
+            <signal id="biss1_sl" />
+            <signal id="biss1_mo" />
+            <signal id="biss1_ma" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="endat0" name="EnDat0">
+        <signals>
+            <signal id="endat0_in" />
+            <signal id="endat0_out" />
+            <signal id="endat0_oe" />
+            <signal id="endat0_clk" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="endat1" name="EnDat1">
+        <signals>
+            <signal id="endat1_in" />
+            <signal id="endat1_out" />
+            <signal id="endat1_oe" />
+            <signal id="endat1_clk" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="adc0_in0" name="ADC0_IN0">
+        <signals>
+            <signal id="adc0_in0" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    <peripheral id="adc0_in1" name="ADC0_IN1">
+        <signals>
+            <signal id="adc0_in1" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="adc1_in0" name="ADC1_IN0">
+        <signals>
+            <signal id="adc1_in0" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    <peripheral id="adc1_in1" name="ADC1_IN1">
+        <signals>
+            <signal id="adc1_in1" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="adc2_in0" name="ADC2_IN0">
+        <signals>
+            <signal id="adc2_in0" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    <peripheral id="adc2_in1" name="ADC2_IN1">
+        <signals>
+            <signal id="adc2_in1" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    <peripheral id="adc2_in7" name="ADC2_IN7">
+        <signals>
+            <signal id="adc2_in7" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    
+    <peripheral id="adc3_in0" name="ADC3_IN0">
+        <signals>
+            <signal id="adc3_in0" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    <peripheral id="adc3_in1" name="ADC3_IN1">
+        <signals>
+            <signal id="adc3_in1" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    <peripheral id="adc3_in2" name="ADC3_IN2">
+        <signals>
+            <signal id="adc3_in2" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    <peripheral id="adc3_in3" name="ADC3_IN3">
+        <signals>
+            <signal id="adc3_in3" drive_strength="-" internal_resistor="-" />
+        </signals>
+    </peripheral>
+    <peripheral id="rst_out_n" name="RST_OUT_N">
+        <signals>
+            <signal id="rst_out_n" />
+        </signals>
+    </peripheral>
+
+</peripherals_list>
+
+
+<constraints>
+
+    
+    <constraint_mandatory>
+        <group id="general_settings">
+            <peripheral id="general" />
+        </group>
+        
+    </constraint_mandatory>
+    
+    
+    <constraint_prohibited>
+        <group id="com_peripherals">
+            <peripheral id="phy0" />
+            <peripheral id="xm0" />
+        </group>
+    </constraint_prohibited>
+    
+    
+    <constraint_mutually_exclusive>
+        <group id="sqi0">
+            <peripheral id="sqi0_b_spi" />
+            <peripheral id="sqi0_b_sqi" />
+        </group>
+    </constraint_mutually_exclusive>
+    
+</constraints>
+
+
+
+
+<peripheral_categories>
+    <category name="Network Interface">
+        <category name="Console Interface">
+            <peripheral>uart</peripheral>
+        </category>
+        <category name="Real-time Ethernet">
+            <peripheral>phy0</peripheral>
+            <peripheral>phy0_phy1</peripheral>
+        </category>
+        <category name="Fieldbus">
+            <peripheral>xm0</peripheral>
+        </category>
+    </category>
+    <category name="Host Interface">
+        <category name="SPM">
+            <peripheral>spm0</peripheral>
+        </category>
+    </category>
+    <category name="External Memory">
+        <category name="SDRAM">
+            <peripheral>sdram_16_bit</peripheral>
+        </category>
+        <category name="SQI Flash">
+            <peripheral>sqi</peripheral>
+        </category>
+    </category>
+    <category name="Application Peripherals">
+        <category name="SQI">
+            <peripheral>sqi0_b_spi</peripheral>
+            <peripheral>sqi0_b_sqi</peripheral>
+            <peripheral>sqi1</peripheral>
+        </category>
+        <category name="MMIO">
+            <peripheral>mmio0</peripheral>
+            <peripheral>mmio1</peripheral>
+            <peripheral>mmio2</peripheral>
+            <peripheral>mmio3</peripheral>
+            <peripheral>mmio4</peripheral>
+            <peripheral>mmio5</peripheral>
+            <peripheral>mmio6</peripheral>
+            <peripheral>mmio7</peripheral>
+            <peripheral>mmio8</peripheral>
+            <peripheral>mmio9</peripheral>
+            <peripheral>mmio10</peripheral>
+            <peripheral>mmio11</peripheral>
+            <peripheral>mmio12</peripheral>
+            <peripheral>mmio13</peripheral>
+            <peripheral>mmio14</peripheral>
+            <peripheral>mmio15</peripheral>
+            <peripheral>mmio16</peripheral>
+            <peripheral>mmio17</peripheral>
+        </category>
+        <category name="IO Link">
+            <peripheral>io_link0</peripheral>
+            <peripheral>io_link1</peripheral>
+        </category>
+        <category name="MLED">
+            <peripheral>mled4</peripheral>
+            <peripheral>mled5</peripheral>
+            <peripheral>mled6</peripheral>
+            <peripheral>mled7</peripheral>
+            <peripheral>mled8</peripheral>
+            <peripheral>mled9</peripheral>
+            <peripheral>mled10</peripheral>
+            <peripheral>mled11</peripheral>
+        </category>
+        <category name="PIO">
+            <peripheral>pio9</peripheral>
+            <peripheral>pio10</peripheral>
+            <peripheral>pio12</peripheral>
+            <peripheral>pio17</peripheral>
+            <peripheral>pio18</peripheral>
+            <peripheral>pio20</peripheral>
+            <peripheral>pio21</peripheral>
+            <peripheral>pio22</peripheral>
+            <peripheral>pio23</peripheral>
+            <peripheral>pio27</peripheral>
+        </category>
+        <category name="BiSS">
+            <peripheral>biss0</peripheral>
+            <peripheral>biss1</peripheral>
+        </category>
+        <category name="EnDat">
+            <peripheral>endat0</peripheral>
+            <peripheral>endat1</peripheral>
+        </category>
+        <category name="ADC">
+            <peripheral>adc0_in0</peripheral>
+            <peripheral>adc0_in1</peripheral>
+            <peripheral>adc1_in0</peripheral>
+            <peripheral>adc1_in1</peripheral>
+            <peripheral>adc2_in0</peripheral>
+            <peripheral>adc2_in1</peripheral>
+            <peripheral>adc2_in7</peripheral>
+            <peripheral>adc3_in0</peripheral>
+            <peripheral>adc3_in1</peripheral>
+            <peripheral>adc3_in2</peripheral>
+            <peripheral>adc3_in3</peripheral>
+        </category>
+    </category>
+    <category name="Misc. Pins">
+        <category name="RST_OUT_N">
+            <peripheral>rst_out_n</peripheral>
+        </category>
+    </category>
+</peripheral_categories>
+
+<mmio_categories>
+    <category name="Sync">
+        <mmio>xc_sample0</mmio>
+        <mmio>xc_sample1</mmio>
+        <mmio>xc_trigger0</mmio>
+        <mmio>xc_trigger1</mmio>
+    </category>
+    <category name="CAN">
+        <mmio>can0_app_rx</mmio>
+        <mmio>can0_app_tx</mmio>
+        <mmio>can1_app_rx</mmio>
+        <mmio>can1_app_tx</mmio>
+    </category>
+    <category name="I2C">
+        <mmio>i2c_xpic_app_scl</mmio>
+        <mmio>i2c_xpic_app_sda</mmio>
+        <mmio>i2c_app_scl</mmio>
+        <mmio>i2c_app_sda</mmio> 
+    </category>
+    <category name="SPI">
+        <mmio>spi1_app_clk</mmio>
+        <mmio>spi1_app_cs0n</mmio>
+        <mmio>spi1_app_cs1n</mmio>
+        <mmio>spi1_app_cs2n</mmio>
+        <mmio>spi1_app_miso</mmio>
+        <mmio>spi1_app_mosi</mmio>
+        <mmio>spi_xpic_app_clk</mmio>
+        <mmio>spi_xpic_app_cs0n</mmio>
+        <mmio>spi_xpic_app_cs1n</mmio>
+        <mmio>spi_xpic_app_cs2n</mmio>
+        <mmio>spi_xpic_app_miso</mmio>
+        <mmio>spi_xpic_app_mosi</mmio>
+    </category>
+    <category name="UART">
+        <mmio>uart_xpic_app_rxd</mmio>
+        <mmio>uart_xpic_app_txd</mmio>
+        <mmio>uart_xpic_app_rtsn</mmio>
+        <mmio>uart_xpic_app_ctsn</mmio>
+        <mmio>uart_app_rxd</mmio>
+        <mmio>uart_app_txd</mmio>
+        <mmio>uart_app_rtsn</mmio>
+        <mmio>uart_app_ctsn</mmio>
+    </category>
+    <category name="GPIO">
+        <mmio>gpio0</mmio>
+        <mmio>gpio1</mmio>
+        <mmio>gpio2</mmio>
+        <mmio>gpio3</mmio>
+        <mmio>gpio4</mmio>
+        <mmio>gpio5</mmio>
+        <mmio>gpio6</mmio>
+        <mmio>gpio7</mmio>
+    </category>
+    <category name="Other">
+        <mmio>wdg_act</mmio>
+        <mmio>en_in</mmio>
+        
+    </category>
+</mmio_categories>
+
+</peripherals>

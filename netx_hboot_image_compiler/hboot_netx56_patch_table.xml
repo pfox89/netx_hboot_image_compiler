@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatchDefinitions>
+	<Options>
+		<Option id="uart0" value="1">
+			<Element id="/at_uart/uc_rx_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_tx_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_rts_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_cts_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_mode" size="1" type="0"/>
+			<Element id="/at_uart/us_baud_div" size="2" type="0"/>
+			<Element id="/at_uart/uc_connect1" size="1" type="0"/>
+			<Element id="/at_uart/uc_connect2" size="1" type="0"/>
+		</Option>
+		<Option id="uart0_rx_tx" value="2">
+			<Element id="/at_uart/uc_rx_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_tx_mmio" size="1" type="0"/>
+		</Option>
+		<Option id="uart0_mode_rts_cts" value="3">
+			<Element id="/at_uart/uc_rts_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_cts_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_mode" size="1" type="0"/>
+		</Option>
+		<Option id="uart0_mode_baud_div" value="4">
+			<Element id="/at_uart/uc_mode" size="1" type="0"/>
+			<Element id="/at_uart/us_baud_div" size="2" type="0"/>
+		</Option>
+		<Option id="uart1" value="5">
+			<Element id="/at_uart/uc_rx_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_tx_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_rts_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_cts_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_mode" size="1" type="0"/>
+			<Element id="/at_uart/us_baud_div" size="2" type="0"/>
+			<Element id="/at_uart/uc_connect1" size="1" type="0"/>
+			<Element id="/at_uart/uc_connect2" size="1" type="0"/>
+		</Option>
+		<Option id="uart1_rx_tx" value="6">
+			<Element id="/at_uart/uc_rx_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_tx_mmio" size="1" type="0"/>
+		</Option>
+		<Option id="uart1_mode_rts_cts" value="7">
+			<Element id="/at_uart/uc_rts_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_cts_mmio" size="1" type="0"/>
+			<Element id="/at_uart/uc_mode" size="1" type="0"/>
+		</Option>
+		<Option id="uart1_mode_baud_div" value="8">
+			<Element id="/at_uart/uc_mode" size="1" type="0"/>
+			<Element id="/at_uart/us_baud_div" size="2" type="0"/>
+		</Option>
+		<Option id="usb_vendor_device_release" value="9">
+			<Element id="/t_usb/us_vendor_id" size="2" type="0"/>
+			<Element id="/t_usb/us_device_id" size="2" type="0"/>
+			<Element id="/t_usb/us_release_id" size="2" type="0"/>
+		</Option>
+		<Option id="usb_cc_mpc" value="10">
+			<Element id="/t_usb/uc_config_characteristics" size="1" type="0"/>
+			<Element id="/t_usb/uc_maximum_power_consumption" size="1" type="0"/>
+		</Option>
+		<Option id="usb_vendor" value="11">
+			<Element id="/t_usb/t_vendor_string" size="17" type="1"/>
+		</Option>
+		<Option id="usb_device" value="12">
+			<Element id="/t_usb/t_device_string" size="17" type="1"/>
+		</Option>
+		<Option id="usb_serial" value="13">
+			<Element id="/t_usb/t_serial_string" size="17" type="1"/>
+		</Option>
+		<Option id="spi_mem0" value="14">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem0_speed" value="15">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem0_idle_mode" value="16">
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem0_mmio" value="17">
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem0_max_magic_seek" value="18">
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem1" value="19">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem1_speed" value="20">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem1_idle_mode" value="21">
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem1_mmio" value="22">
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem1_max_magic_seek" value="23">
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem2" value="24">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem2_speed" value="25">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem2_idle_mode" value="26">
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem2_mmio" value="27">
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem2_max_magic_seek" value="28">
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem3" value="29">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem3_speed" value="30">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem3_idle_mode" value="31">
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem3_mmio" value="32">
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem3_max_magic_seek" value="33">
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem4" value="34">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem4_speed" value="35">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem4_idle_mode" value="36">
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem4_mmio" value="37">
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem4_max_magic_seek" value="38">
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem5" value="39">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem5_speed" value="40">
+			<Element id="/atSpiMemCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem5_idle_mode" value="41">
+			<Element id="/atSpiMemCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMemCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem5_mmio" value="42">
+			<Element id="/atSpiMemCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mem5_max_magic_seek" value="43">
+			<Element id="/atSpiMemCfg/ucMaxMagicSeek" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mem6" value="44"/>
+		<Option id="spi_mem6_speed" value="45"/>
+		<Option id="spi_mem6_idle_mode" value="46"/>
+		<Option id="spi_mem6_mmio" value="47"/>
+		<Option id="spi_mem6_max_magic_seek" value="48"/>
+		<Option id="spi_mmc0" value="49">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc0_speed" value="50">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc0_idle_mode" value="51">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mmc0_mmio" value="52">
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc0_filename" value="53">
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc1" value="54">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc1_speed" value="55">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc1_idle_mode" value="56">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mmc1_mmio" value="57">
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc1_filename" value="58">
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc2" value="59">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc2_speed" value="60">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc2_idle_mode" value="61">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mmc2_mmio" value="62">
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc2_filename" value="63">
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc3" value="64">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc3_speed" value="65">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc3_idle_mode" value="66">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mmc3_mmio" value="67">
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc3_filename" value="68">
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc4" value="69">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc4_speed" value="70">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc4_idle_mode" value="71">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mmc4_mmio" value="72">
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc4_filename" value="73">
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc5" value="74">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="spi_mmc5_speed" value="75">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc5_idle_mode" value="76">
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/atSpiMmcCfg/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="spi_mmc5_mmio" value="77">
+			<Element id="/atSpiMmcCfg/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="spi_mmc5_filename" value="78">
+			<Element id="/atSpiMmcCfg/atFileName" size="13" type="1"/>
+		</Option>
+		<Option id="sram0" value="79">
+			<Element id="/atSRam/ulCtrl" size="4" type="0"/>
+		</Option>
+		<Option id="sram1" value="80">
+			<Element id="/atSRam/ulCtrl" size="4" type="0"/>
+		</Option>
+		<Option id="sram2" value="81">
+			<Element id="/atSRam/ulCtrl" size="4" type="0"/>
+		</Option>
+		<Option id="sram3" value="82">
+			<Element id="/atSRam/ulCtrl" size="4" type="0"/>
+		</Option>
+		<Option id="sram_general" value="83">
+			<Element id="/tSRamGeneral/ulCs0_apm_ctrl" size="4" type="0"/>
+			<Element id="/tSRamGeneral/ulRdy_cfg" size="4" type="0"/>
+		</Option>
+		<Option id="sdram" value="84">
+			<Element id="/t_sdram/ul_general_ctrl" size="4" type="0"/>
+			<Element id="/t_sdram/ul_timing_ctrl" size="4" type="0"/>
+		</Option>
+		<Option id="bootdev" value="85">
+			<Element id="/t_bootdev_options/auc_boot_devices" size="8" type="0"/>
+		</Option>
+		<Option id="bootdev0" value="86">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev1" value="87">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev2" value="88">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev3" value="89">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev4" value="90">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev5" value="91">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev6" value="92">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev7" value="93">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev01" value="94">
+			<Element id="/t_bootdev_options/auc_boot_devices:size2" size="2" type="0"/>
+		</Option>
+		<Option id="bootdev23" value="95">
+			<Element id="/t_bootdev_options/auc_boot_devices:size2" size="2" type="0"/>
+		</Option>
+		<Option id="bootdev45" value="96">
+			<Element id="/t_bootdev_options/auc_boot_devices:size2" size="2" type="0"/>
+		</Option>
+		<Option id="bootdev67" value="97">
+			<Element id="/t_bootdev_options/auc_boot_devices:size2" size="2" type="0"/>
+		</Option>
+		<Option id="bootdev0123" value="98">
+			<Element id="/t_bootdev_options/auc_boot_devices:size4" size="4" type="0"/>
+		</Option>
+		<Option id="bootdev4567" value="99">
+			<Element id="/t_bootdev_options/auc_boot_devices:size4" size="4" type="0"/>
+		</Option>
+		<Option id="console" value="100">
+			<Element id="/t_console_options/uc_console_line_size" size="1" type="0"/>
+			<Element id="/t_console_options/uc_console_linefeed_mode" size="1" type="0"/>
+			<Element id="/t_console_options/auc_console_devices" size="4" type="0"/>
+			<Element id="/t_console_options/uc_uart_diagnostics_device" size="1" type="0"/>
+		</Option>
+		<Option id="console_linesize_linefeed" value="101">
+			<Element id="/t_console_options/uc_console_line_size" size="1" type="0"/>
+			<Element id="/t_console_options/uc_console_linefeed_mode" size="1" type="0"/>
+		</Option>
+		<Option id="console_devices" value="102">
+			<Element id="/t_console_options/auc_console_devices" size="4" type="0"/>
+		</Option>
+		<Option id="console_diagnostic" value="103">
+			<Element id="/t_console_options/uc_uart_diagnostics_device" size="1" type="0"/>
+		</Option>
+		<Option id="sqi" value="104">
+			<Element id="/t_sqi_options/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/t_sqi_options/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/t_sqi_options/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/t_sqi_options/tSpiCfg/aucMmio" size="4" type="0"/>
+			<Element id="/t_sqi_options/ulSqiRomCfg" size="4" type="0"/>
+			<Element id="/t_sqi_options/tSeqId" size="49" type="1"/>
+			<Element id="/t_sqi_options/tSeqRead" size="17" type="1"/>
+			<Element id="/t_sqi_options/tSeqDeactivate" size="17" type="1"/>
+		</Option>
+		<Option id="sqi_speed" value="105">
+			<Element id="/t_sqi_options/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_idle_mode" value="106">
+			<Element id="/t_sqi_options/tSpiCfg/ucIdleCfg" size="1" type="0"/>
+			<Element id="/t_sqi_options/tSpiCfg/ucMode" size="1" type="0"/>
+		</Option>
+		<Option id="sqi_mmio" value="107">
+			<Element id="/t_sqi_options/tSpiCfg/aucMmio" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_rom_cfg" value="108">
+			<Element id="/t_sqi_options/ulSqiRomCfg" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_id" value="109">
+			<Element id="/t_sqi_options/tSeqId" size="49" type="1"/>
+		</Option>
+		<Option id="sqi_read" value="110">
+			<Element id="/t_sqi_options/tSeqRead" size="17" type="1"/>
+		</Option>
+		<Option id="sqi_deactivate" value="111">
+			<Element id="/t_sqi_options/tSeqDeactivate" size="17" type="1"/>
+		</Option>
+		<Option id="ethernet" value="112">
+			<Element id="/t_ethernet/auc_tftp_server_name" size="64" type="2"/>
+			<Element id="/t_ethernet/auc_tftp_bootfile_name" size="64" type="2"/>
+			<Element id="/t_ethernet/aucMac" size="6" type="0"/>
+			<Element id="/t_ethernet/usTftpPort" size="2" type="0"/>
+			<Element id="/t_ethernet/ulIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulGatewayIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulNetmask" size="4" type="0"/>
+			<Element id="/t_ethernet/ulTftpIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulDnsIp" size="4" type="0"/>
+			<Element id="/t_ethernet/usLinkUpDelay" size="2" type="0"/>
+			<Element id="/t_ethernet/usPhyControl" size="2" type="0"/>
+			<Element id="/t_ethernet/usPhyAutonegAdvertisement" size="2" type="0"/>
+			<Element id="/t_ethernet/ucXcPort" size="1" type="0"/>
+			<Element id="/t_ethernet/ucPhyAdr" size="1" type="0"/>
+		</Option>
+		<Option id="ethernet_tftp_server" value="113">
+			<Element id="/t_ethernet/auc_tftp_server_name" size="64" type="2"/>
+		</Option>
+		<Option id="ethernet_tftp_bootfile" value="114">
+			<Element id="/t_ethernet/auc_tftp_bootfile_name" size="64" type="2"/>
+		</Option>
+		<Option id="ethernet_mac" value="115">
+			<Element id="/t_ethernet/aucMac" size="6" type="0"/>
+		</Option>
+		<Option id="ethernet_tftp_ip" value="116">
+			<Element id="/t_ethernet/ulTftpIp" size="4" type="0"/>
+		</Option>
+		<Option id="ethernet_tftp_port" value="117">
+			<Element id="/t_ethernet/usTftpPort" size="2" type="0"/>
+		</Option>
+		<Option id="ethernet_ip_gw_nm_dns" value="118">
+			<Element id="/t_ethernet/ulIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulGatewayIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulNetmask" size="4" type="0"/>
+			<Element id="/t_ethernet/ulDnsIp" size="4" type="0"/>
+		</Option>
+		<Option id="ethernet_ip_gw_nm_tftp_ip" value="119">
+			<Element id="/t_ethernet/ulIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulGatewayIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulNetmask" size="4" type="0"/>
+			<Element id="/t_ethernet/ulTftpIp" size="4" type="0"/>
+		</Option>
+		<Option id="ethernet_phy_regs" value="120">
+			<Element id="/t_ethernet/usPhyControl" size="2" type="0"/>
+			<Element id="/t_ethernet/usPhyAutonegAdvertisement" size="2" type="0"/>
+		</Option>
+		<Option id="ethernet_xc_phyadr" value="121">
+			<Element id="/t_ethernet/ucXcPort" size="1" type="0"/>
+			<Element id="/t_ethernet/ucPhyAdr" size="1" type="0"/>
+		</Option>
+		<Option id="ethernet_linkupdelay" value="122">
+			<Element id="/t_ethernet/usLinkUpDelay" size="2" type="0"/>
+		</Option>
+		<Option id="hif_hif_io_mem_cfg_b01" value="123">
+			<Element id="/t_hif_options/ulHifIoCfg" size="4" type="0"/>
+			<Element id="/t_hif_options/ulMemCfg" size="2" type="0"/>
+		</Option>
+		<Option id="hif_hif_io_lsb_mem_cfg" value="124">
+			<Element id="/t_hif_options/ulHifIoCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ulMemCfg" size="2" type="0"/>
+		</Option>
+		<Option id="hif_hif_io_lsb_mem_cfg_b0" value="125">
+			<Element id="/t_hif_options/ulHifIoCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ulMemCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_hif_io_lsb_mem_cfg_b1" value="126">
+			<Element id="/t_hif_options/ulHifIoCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ulMemCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_all_cfg" value="127">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmMiscCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmIoCfgMisc" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmIrqFiqCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpmcfg0x0" value="128">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpmaddrcfg" value="129">
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpmtimingcfg" value="130">
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpmrdycfg" value="131">
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpmmisccfg" value="132">
+			<Element id="/t_hif_options/ucDpmMiscCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpmiocfgmisc" value="133">
+			<Element id="/t_hif_options/ucDpmIoCfgMisc" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpmirqfiqcfg" value="134">
+			<Element id="/t_hif_options/ucDpmIrqFiqCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_cfg0x0_addrcfg" value="135">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_cfg0x0_timingcfg" value="136">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_cfg0x0_rdycfg" value="137">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_addrcfg_timingcfg" value="138">
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_addrcfg_rdycfg" value="139">
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_timingcfg_rdycfg" value="140">
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_cfg0x0_addrcfg_timingcfg" value="141">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_cfg0x0_addrcfg_rdycfg" value="142">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_cfg0x0_timingcfg_rdycfg" value="143">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_addrcfg_timingcfg_rdycfg" value="144">
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_cfg0x0_addrcfg_timingcfg_rdycfg" value="145">
+			<Element id="/t_hif_options/ucDpmCfg0x0" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmAddrCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmTimingCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmRdyCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_dpm_misccfg_iocfgmisc_irqfiqcfg" value="146">
+			<Element id="/t_hif_options/ucDpmMiscCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmIoCfgMisc" size="1" type="0"/>
+			<Element id="/t_hif_options/ucDpmIrqFiqCfg" size="1" type="0"/>
+		</Option>
+		<Option id="system_config_io_config" value="147">
+			<Element id="/t_system_config/ul_io_config" size="4" type="0"/>
+		</Option>
+		<Option id="system_config_io_config0" value="148">
+			<Element id="/t_system_config/ul_io_config" size="1" type="0"/>
+		</Option>
+		<Option id="system_config_io_config1" value="149">
+			<Element id="/t_system_config/ul_io_config" size="1" type="0"/>
+		</Option>
+		<Option id="system_config_io_config2" value="150">
+			<Element id="/t_system_config/ul_io_config" size="1" type="0"/>
+		</Option>
+		<Option id="system_config_io_config3" value="151">
+			<Element id="/t_system_config/ul_io_config" size="1" type="0"/>
+		</Option>
+		<Option id="mmio00" value="152">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="reserved99" value="153"/>
+		<Option id="mmio01" value="154">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio02" value="155">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio03" value="156">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio04" value="157">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio05" value="158">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio06" value="159">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio07" value="160">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio08" value="161">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio09" value="162">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio0a" value="163">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio0b" value="164">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio0c" value="165">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio0d" value="166">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio0e" value="167">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio0f" value="168">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio10" value="169">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio11" value="170">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio12" value="171">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio13" value="172">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio14" value="173">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio15" value="174">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio16" value="175">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio17" value="176">
+			<Element id="/t_system_config/auc_mmio_sel" size="1" type="2"/>
+		</Option>
+		<Option id="mmio00_array" value="177">
+			<Element id="/t_system_config/auc_mmio_sel" size="24" type="2"/>
+		</Option>
+		<Option id="mmio04_array" value="178">
+			<Element id="/t_system_config/auc_mmio_sel" size="20" type="2"/>
+		</Option>
+		<Option id="mmio08_array" value="179">
+			<Element id="/t_system_config/auc_mmio_sel" size="16" type="2"/>
+		</Option>
+		<Option id="mmio0c_array" value="180">
+			<Element id="/t_system_config/auc_mmio_sel" size="12" type="2"/>
+		</Option>
+		<Option id="mmio10_array" value="181">
+			<Element id="/t_system_config/auc_mmio_sel" size="8" type="2"/>
+		</Option>
+		<Option id="mmio14_array" value="182">
+			<Element id="/t_system_config/auc_mmio_sel" size="4" type="2"/>
+		</Option>
+		<Option id="hif_hif_io_mem_cfg_all" value="183">
+			<Element id="/t_hif_options/ulHifIoCfg" size="4" type="0"/>
+			<Element id="/t_hif_options/ulMemCfg" size="4" type="0"/>
+		</Option>
+		<Option id="hif_hif_io_lsb_mem_cfg_b2" value="184">
+			<Element id="/t_hif_options/ulHifIoCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ulMemCfg" size="1" type="0"/>
+		</Option>
+		<Option id="hif_hif_io_lsb_mem_cfg_b3" value="185">
+			<Element id="/t_hif_options/ulHifIoCfg" size="1" type="0"/>
+			<Element id="/t_hif_options/ulMemCfg" size="1" type="0"/>
+		</Option>
+	</Options>
+	<Definitions>
+		<Definition name="BOOTDEV_DPM" value="18"/>
+		<Definition name="BOOTDEV_ETH" value="19"/>
+		<Definition name="BOOTDEV_NONE" value="0"/>
+		<Definition name="BOOTDEV_SPI_MEM_CS0" value="8"/>
+		<Definition name="BOOTDEV_SPI_MEM_CS1" value="9"/>
+		<Definition name="BOOTDEV_SPI_MEM_CS2" value="10"/>
+		<Definition name="BOOTDEV_SPI_MMC_CS0" value="11"/>
+		<Definition name="BOOTDEV_SPI_MMC_CS1" value="12"/>
+		<Definition name="BOOTDEV_SPI_MMC_CS2" value="13"/>
+		<Definition name="BOOTDEV_SQI_MEM_CS0" value="2"/>
+		<Definition name="BOOTDEV_SQI_MEM_CS1" value="3"/>
+		<Definition name="BOOTDEV_SQI_MEM_CS2" value="4"/>
+		<Definition name="BOOTDEV_SQI_MMC_CS0" value="5"/>
+		<Definition name="BOOTDEV_SQI_MMC_CS1" value="6"/>
+		<Definition name="BOOTDEV_SQI_MMC_CS2" value="7"/>
+		<Definition name="BOOTDEV_SQI_XIP_CS0" value="1"/>
+		<Definition name="BOOTDEV_SRAM_E_CS0" value="14"/>
+		<Definition name="BOOTDEV_SRAM_E_CS1" value="15"/>
+		<Definition name="BOOTDEV_SRAM_E_CS2" value="16"/>
+		<Definition name="BOOTDEV_SRAM_E_CS3" value="17"/>
+		<Definition name="BOOTDEV_SRAM_H_CS0" value="20"/>
+		<Definition name="BOOTDEV_SRAM_H_CS1" value="21"/>
+		<Definition name="BOOTDEV_SRAM_H_CS2" value="22"/>
+		<Definition name="BOOTDEV_SRAM_H_CS3" value="23"/>
+		<Definition name="CONSOLE_DEVICE_DCC" value="4"/>
+		<Definition name="CONSOLE_DEVICE_NONE" value="0"/>
+		<Definition name="CONSOLE_DEVICE_SIMU" value="5"/>
+		<Definition name="CONSOLE_DEVICE_UART0" value="1"/>
+		<Definition name="CONSOLE_DEVICE_UART1" value="2"/>
+		<Definition name="CONSOLE_DEVICE_USB" value="3"/>
+		<Definition name="MEM_DEV_DPM" value="32768"/>
+		<Definition name="MEM_DEV_None" value="0"/>
+		<Definition name="MEM_DEV_SDRam_E_08" value="4096"/>
+		<Definition name="MEM_DEV_SDRam_E_16" value="8192"/>
+		<Definition name="MEM_DEV_SDRam_E_32" value="16384"/>
+		<Definition name="MEM_DEV_SDRam_H_08" value="268435456"/>
+		<Definition name="MEM_DEV_SDRam_H_16" value="536870912"/>
+		<Definition name="MEM_DEV_SDRam_H_32" value="1073741824"/>
+		<Definition name="MEM_DEV_SRB_E_CS0_08" value="1"/>
+		<Definition name="MEM_DEV_SRB_E_CS0_16" value="16"/>
+		<Definition name="MEM_DEV_SRB_E_CS0_32" value="256"/>
+		<Definition name="MEM_DEV_SRB_E_CS1_08" value="2"/>
+		<Definition name="MEM_DEV_SRB_E_CS1_16" value="32"/>
+		<Definition name="MEM_DEV_SRB_E_CS1_32" value="512"/>
+		<Definition name="MEM_DEV_SRB_E_CS2_08" value="4"/>
+		<Definition name="MEM_DEV_SRB_E_CS2_16" value="64"/>
+		<Definition name="MEM_DEV_SRB_E_CS2_32" value="1024"/>
+		<Definition name="MEM_DEV_SRB_E_CS3_08" value="8"/>
+		<Definition name="MEM_DEV_SRB_E_CS3_16" value="128"/>
+		<Definition name="MEM_DEV_SRB_E_CS3_32" value="2048"/>
+		<Definition name="MEM_DEV_SRB_H_CS0_08" value="65536"/>
+		<Definition name="MEM_DEV_SRB_H_CS0_16" value="1048576"/>
+		<Definition name="MEM_DEV_SRB_H_CS0_32" value="16777216"/>
+		<Definition name="MEM_DEV_SRB_H_CS1_08" value="131072"/>
+		<Definition name="MEM_DEV_SRB_H_CS1_16" value="2097152"/>
+		<Definition name="MEM_DEV_SRB_H_CS1_32" value="33554432"/>
+		<Definition name="MEM_DEV_SRB_H_CS2_08" value="262144"/>
+		<Definition name="MEM_DEV_SRB_H_CS2_16" value="4194304"/>
+		<Definition name="MEM_DEV_SRB_H_CS2_32" value="67108864"/>
+		<Definition name="MEM_DEV_SRB_H_CS3_08" value="524288"/>
+		<Definition name="MEM_DEV_SRB_H_CS3_16" value="8388608"/>
+		<Definition name="MEM_DEV_SRB_H_CS3_32" value="134217728"/>
+		<Definition name="MSK_SQI_CFG_IDLE_IO1_OE" value="0x01"/>
+		<Definition name="MSK_SQI_CFG_IDLE_IO1_OUT" value="0x02"/>
+		<Definition name="MSK_SQI_CFG_IDLE_IO2_OE" value="0x04"/>
+		<Definition name="MSK_SQI_CFG_IDLE_IO2_OUT" value="0x08"/>
+		<Definition name="MSK_SQI_CFG_IDLE_IO3_OE" value="0x10"/>
+		<Definition name="MSK_SQI_CFG_IDLE_IO3_OUT" value="0x20"/>
+		<Definition name="QSI_ADR" value="8"/>
+		<Definition name="QSI_CMP" value="16"/>
+		<Definition name="QSI_CMP_FATAL" value="24"/>
+		<Definition name="QSI_DUMMY_NNN" value="192"/>
+		<Definition name="QSI_DUMMY_SDD" value="216"/>
+		<Definition name="QSI_DUMMY_SDN" value="208"/>
+		<Definition name="QSI_DUMMY_SNN" value="200"/>
+		<Definition name="QSI_MASK" value="32"/>
+		<Definition name="QSI_MODE" value="0"/>
+		<Definition name="QSI_RECEIVE_NNN" value="160"/>
+		<Definition name="QSI_RECEIVE_SDD" value="184"/>
+		<Definition name="QSI_RECEIVE_SDN" value="176"/>
+		<Definition name="QSI_RECEIVE_SNN" value="168"/>
+		<Definition name="QSI_SEND_NNN" value="128"/>
+		<Definition name="QSI_SEND_SDD" value="152"/>
+		<Definition name="QSI_SEND_SDN" value="144"/>
+		<Definition name="QSI_SEND_SNN" value="136"/>
+		<Definition name="QSI_SKIP_EQ" value="224"/>
+		<Definition name="QSI_SKIP_NE" value="240"/>
+		<Definition name="SPI_MODE0" value="0"/>
+		<Definition name="SPI_MODE1" value="1"/>
+		<Definition name="SPI_MODE2" value="2"/>
+		<Definition name="SPI_MODE3" value="3"/>
+		<Definition name="UART_MODE_2STOPBITS" value="0x08"/>
+		<Definition name="UART_MODE_BYTESIZE_5BIT" value="0x00"/>
+		<Definition name="UART_MODE_BYTESIZE_6BIT" value="0x20"/>
+		<Definition name="UART_MODE_BYTESIZE_7BIT" value="0x40"/>
+		<Definition name="UART_MODE_BYTESIZE_8BIT" value="0x60"/>
+		<Definition name="UART_MODE_ENABLE_RTSCTS" value="0x01"/>
+		<Definition name="UART_MODE_EVEN_PARITY" value="0x04"/>
+		<Definition name="UART_MODE_PARITY_ENABLE" value="0x02"/>
+	</Definitions>
+</PatchDefinitions>

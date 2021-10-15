@@ -1,0 +1,101 @@
+<!-- based on board_config_nxhx90-jtag-r2_DPM16_0.0.0.8.xml -->
+<peripherals chip_type="netx90_rev0,netx90_rev1,netx90" board="default">
+	<peripherals_list>
+		<peripheral id="dpm_16_bit" name="DPM16">
+			<configurations>
+				<config id="dpm16_nxhx90_jtag_r3" name="NXHX90-JTAG Rev3 DPM 16bit">
+					<signals>
+						<signal id="dpm_a0"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a1"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a2"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a3"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a4"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a5"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a6"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a7"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a8"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a9"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a10"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_a11"  drive_strength="high" internal_resistor="pu,enabled" read_only="true" optional="false"/>
+						<signal id="dpm_a12"  drive_strength="high" internal_resistor="pu,enabled" read_only="true" optional="false"/>
+						<signal id="dpm_a13"  drive_strength="high" internal_resistor="pu,enabled" read_only="true" optional="false"/>
+						<signal id="dpm_a14"  drive_strength="high" internal_resistor="pu,enabled" read_only="true" optional="false"/>
+						<signal id="dpm_ale"  drive_strength="high" internal_resistor="pu,enabled" read_only="true" optional="false" selected="false"/>
+						<signal id="dpm_wrhn" drive_strength="high" internal_resistor="pu,enabled" read_only="true" optional="false" selected="false"/>
+						<signal id="dpm_bhen" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_csn"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d0"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d1"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d2"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d3"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d4"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d5"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d6"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d7"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d8"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d9"   drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d10"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d11"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d12"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d13"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d14"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_d15"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_dirq" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_rdn"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_rdy"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_sirq" drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+						<signal id="dpm_wrn"  drive_strength="high" internal_resistor="pu,enabled" read_only="true"/>
+					</signals>
+					
+					<parameters>
+						<!-- 
+							0     sel_hif_dpm = 1 
+							4-1   serial DPM inactive
+							5-6   hif_mi-cfg = 11 HIF IOs as DPM
+							24:   en_hif_rdy_pio_mi = 0
+							25:   en_hif_wdg_sys_hif_d19 = 0
+						-->
+						<param id="hif_io_cfg"      name="HIF I/O Configuration"        type="uint32" value="0x00000061" read_only="true"/>
+						<!--  
+							3-0 mode = 0100  16 bit data non multiplexed mode. DPM_D15..0 are used as data lines. DPM_A16 can be used as Address-Enable DPM_AEN/DPM_ALE. 
+							5-4 endian = 00 little endian  
+						-->
+						<param id="dpm_cfg0x0"      name="DPM Configuration Register 0" type="uint32" value="0x00000004" read_only="true"/>
+						<!--  
+							1-0 dir_ctrl = 00 dedicated low active read- and write control signals (RDn + WRn) 
+							4 be_sel = 0 DPM access byte-enable signal selection.  BHE1n, A0 
+							6 be_rd_dis = 0  byte-enables will be used on read access, only data lines of enabled bytes will be driven. 
+							7 be_wr_dis = 0  byte-enables will be used on write access, only data lines of enabled bytes will be written. 
+							9-8 be_pol = 0   BE signals are low active byte-enables. 
+							13-12 aen_sel = 0 Address-Enable (AEN-modes) or Address-Latch-Enable (multiplexed modes) Control.  No additional Address controlling function. 
+							14 aen_pol = 0 Address-Enable active level polarity.  Address is latched while ALE-signal is low (i.e. low active ALE/AEN). 
+							15 addr_sh = 0  Address is always Byte address (not shifted).
+							18-16 cs_ctrl = 000  Use 1 low active chip-select signal (DPM_CSN). 
+							
+						-->
+						<param id="dpm_if_cfg"      name="DPM Interface Configuration"  type="uint32" value="0x00000000" read_only="true"/>
+						<param id="dpm_pio_cfg0"    name="DPM PIO Configuration 0"      type="uint32" value="0x00000000" read_only="true"/>
+						<!-- 
+							31 sel_sirq_pio = 1 Use DPM_SIRQ-pin as PIO pin.
+						-->
+						<param id="dpm_pio_cfg1"    name="DPM PIO Configuration 1"      type="uint32" value="0x80000000" read_only="true"/>
+						
+						<!-- 6 = 32KB - 3 = DPM CONFIG WINDOW WILL BE DISABLED! Activation by FW required -->
+						<param id="dpm_addr_cfg"    name="DPM Address"                  type="uint32" value="0x00000036" read_only="true"/>  
+						
+						<!-- Reduce Address/read data setup time inside netX as much as possible --> 
+						<param id="dpm_timing_cfg"  name="DPM Timing"                   type="uint32" value="0x00000011" read_only="true"/>  
+						<param id="dpm_rdy_cfg"     name="DPM Ready Configuration"      type="uint32" value="0x00000003" read_only="true"/>
+						
+						<!-- Adjust error handling same as for netX 51/52 -->  
+						<param id="dpm_misc_cfg"    name="Misc DPM Configuration"       type="uint32" value="0x00000000" read_only="true"/>  
+						
+						<!-- Drive mode for DIRQ is always active; -->  
+						<param id="dpm_io_cfg_misc" name="Misc DPM I/O Configuration"   type="uint32" value="0x00000080" read_only="true"/>  
+					</parameters>
+				</config>
+			</configurations>
+		</peripheral>
+	</peripherals_list>
+</peripherals>
+

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatchDefinitions>
+	<Options>
+		<Option id="bootdev" value="1">
+			<Element id="/t_bootdev_options/auc_boot_devices" size="8" type="0"/>
+		</Option>
+		<Option id="bootdev0" value="2">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev1" value="3">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev2" value="4">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev3" value="5">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev4" value="6">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev5" value="7">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev6" value="8">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev7" value="9">
+			<Element id="/t_bootdev_options/auc_boot_devices:size1" size="1" type="0"/>
+		</Option>
+		<Option id="bootdev01" value="10">
+			<Element id="/t_bootdev_options/auc_boot_devices:size2" size="2" type="0"/>
+		</Option>
+		<Option id="bootdev23" value="11">
+			<Element id="/t_bootdev_options/auc_boot_devices:size2" size="2" type="0"/>
+		</Option>
+		<Option id="bootdev45" value="12">
+			<Element id="/t_bootdev_options/auc_boot_devices:size2" size="2" type="0"/>
+		</Option>
+		<Option id="bootdev67" value="13">
+			<Element id="/t_bootdev_options/auc_boot_devices:size2" size="2" type="0"/>
+		</Option>
+		<Option id="bootdev0123" value="14">
+			<Element id="/t_bootdev_options/auc_boot_devices:size4" size="4" type="0"/>
+		</Option>
+		<Option id="bootdev4567" value="15">
+			<Element id="/t_bootdev_options/auc_boot_devices:size4" size="4" type="0"/>
+		</Option>
+		<Option id="console" value="16">
+			<Element id="/t_console_options/uc_console_line_size" size="1" type="0"/>
+			<Element id="/t_console_options/uc_console_linefeed_mode" size="1" type="0"/>
+			<Element id="/t_console_options/auc_console_devices" size="4" type="0"/>
+		</Option>
+		<Option id="console_linesize_linefeed" value="17">
+			<Element id="/t_console_options/uc_console_line_size" size="1" type="0"/>
+			<Element id="/t_console_options/uc_console_linefeed_mode" size="1" type="0"/>
+		</Option>
+		<Option id="console_devices" value="18">
+			<Element id="/t_console_options/auc_console_devices" size="4" type="0"/>
+		</Option>
+		<Option id="ethernet" value="19">
+			<Element id="/t_ethernet/ac_tftp_server_name" size="64" type="2"/>
+			<Element id="/t_ethernet/ac_tftp_bootfile_name" size="128" type="2"/>
+			<Element id="/t_ethernet/aucMac" size="6" type="0"/>
+			<Element id="/t_ethernet/usTftpPort" size="2" type="0"/>
+			<Element id="/t_ethernet/ulIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulGatewayIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulNetmask" size="4" type="0"/>
+			<Element id="/t_ethernet/ulTftpIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulDnsIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulPhyControl" size="4" type="0"/>
+			<Element id="/t_ethernet/usLinkUpDelay" size="2" type="0"/>
+			<Element id="/t_ethernet/usArpTimeout" size="2" type="0"/>
+			<Element id="/t_ethernet/usDhcpTimeout" size="2" type="0"/>
+			<Element id="/t_ethernet/usDnsTimeout" size="2" type="0"/>
+			<Element id="/t_ethernet/usTftpTimeout" size="2" type="0"/>
+			<Element id="/t_ethernet/ucArpRetries" size="1" type="0"/>
+			<Element id="/t_ethernet/ucDhcpRetries" size="1" type="0"/>
+			<Element id="/t_ethernet/ucDnsRetries" size="1" type="0"/>
+			<Element id="/t_ethernet/ucTftpRetries" size="1" type="0"/>
+			<Element id="/t_ethernet/aucMmioCfg" size="2" type="0"/>
+		</Option>
+		<Option id="ethernet_tftp" value="20">
+			<Element id="/t_ethernet/ac_tftp_server_name" size="64" type="2"/>
+			<Element id="/t_ethernet/ac_tftp_bootfile_name" size="128" type="2"/>
+			<Element id="/t_ethernet/usTftpPort" size="2" type="0"/>
+		</Option>
+		<Option id="ethernet_tftpip" value="21">
+			<Element id="/t_ethernet/ac_tftp_bootfile_name" size="128" type="2"/>
+			<Element id="/t_ethernet/usTftpPort" size="2" type="0"/>
+			<Element id="/t_ethernet/ulTftpIp" size="4" type="0"/>
+		</Option>
+		<Option id="ethernet_network" value="22">
+			<Element id="/t_ethernet/aucMac" size="6" type="0"/>
+			<Element id="/t_ethernet/ulIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulGatewayIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulNetmask" size="4" type="0"/>
+			<Element id="/t_ethernet/ulDnsIp" size="4" type="0"/>
+		</Option>
+		<Option id="ethernet_mac" value="23">
+			<Element id="/t_ethernet/aucMac" size="6" type="0"/>
+		</Option>
+		<Option id="ethernet_ip" value="24">
+			<Element id="/t_ethernet/ulIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulGatewayIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulNetmask" size="4" type="0"/>
+			<Element id="/t_ethernet/ulTftpIp" size="4" type="0"/>
+			<Element id="/t_ethernet/ulDnsIp" size="4" type="0"/>
+		</Option>
+		<Option id="ethernet_delay" value="25">
+			<Element id="/t_ethernet/usLinkUpDelay" size="2" type="0"/>
+			<Element id="/t_ethernet/usArpTimeout" size="2" type="0"/>
+			<Element id="/t_ethernet/usDhcpTimeout" size="2" type="0"/>
+			<Element id="/t_ethernet/usDnsTimeout" size="2" type="0"/>
+			<Element id="/t_ethernet/usTftpTimeout" size="2" type="0"/>
+		</Option>
+		<Option id="ethernet_retry" value="26">
+			<Element id="/t_ethernet/ucArpRetries" size="1" type="0"/>
+			<Element id="/t_ethernet/ucDhcpRetries" size="1" type="0"/>
+			<Element id="/t_ethernet/ucDnsRetries" size="1" type="0"/>
+			<Element id="/t_ethernet/ucTftpRetries" size="1" type="0"/>
+		</Option>
+		<Option id="ethernet_io" value="27">
+			<Element id="/t_ethernet/ulPhyControl" size="4" type="0"/>
+			<Element id="/t_ethernet/usLinkUpDelay" size="2" type="0"/>
+			<Element id="/t_ethernet/aucMmioCfg" size="2" type="0"/>
+		</Option>
+		<Option id="iflash0" value="28">
+			<Element id="/at_intflash/ulBufferReadAheadInstructions" size="4" type="0"/>
+			<Element id="/at_intflash/ulBufferReadAheadData" size="4" type="0"/>
+			<Element id="/at_intflash/ulInitialDwordOffset" size="4" type="0"/>
+			<Element id="/at_intflash/ucRedundancy0" size="1" type="0"/>
+			<Element id="/at_intflash/ucRedundancy1" size="1" type="0"/>
+		</Option>
+		<Option id="iflash0_read_ahead" value="29">
+			<Element id="/at_intflash/ulBufferReadAheadInstructions" size="4" type="0"/>
+			<Element id="/at_intflash/ulBufferReadAheadData" size="4" type="0"/>
+		</Option>
+		<Option id="iflash0_offset" value="30">
+			<Element id="/at_intflash/ulInitialDwordOffset" size="4" type="0"/>
+		</Option>
+		<Option id="iflash0_redundancy" value="31">
+			<Element id="/at_intflash/ucRedundancy0" size="1" type="0"/>
+			<Element id="/at_intflash/ucRedundancy1" size="1" type="0"/>
+		</Option>
+		<Option id="iflash1" value="32">
+			<Element id="/at_intflash/ulBufferReadAheadInstructions" size="4" type="0"/>
+			<Element id="/at_intflash/ulBufferReadAheadData" size="4" type="0"/>
+			<Element id="/at_intflash/ulInitialDwordOffset" size="4" type="0"/>
+			<Element id="/at_intflash/ucRedundancy0" size="1" type="0"/>
+			<Element id="/at_intflash/ucRedundancy1" size="1" type="0"/>
+		</Option>
+		<Option id="iflash1_read_ahead" value="33">
+			<Element id="/at_intflash/ulBufferReadAheadInstructions" size="4" type="0"/>
+			<Element id="/at_intflash/ulBufferReadAheadData" size="4" type="0"/>
+		</Option>
+		<Option id="iflash1_offset" value="34">
+			<Element id="/at_intflash/ulInitialDwordOffset" size="4" type="0"/>
+		</Option>
+		<Option id="iflash1_redundancy" value="35">
+			<Element id="/at_intflash/ucRedundancy0" size="1" type="0"/>
+			<Element id="/at_intflash/ucRedundancy1" size="1" type="0"/>
+		</Option>
+		<Option id="iflash2" value="36">
+			<Element id="/at_intflash/ulBufferReadAheadInstructions" size="4" type="0"/>
+			<Element id="/at_intflash/ulBufferReadAheadData" size="4" type="0"/>
+			<Element id="/at_intflash/ulInitialDwordOffset" size="4" type="0"/>
+			<Element id="/at_intflash/ucRedundancy0" size="1" type="0"/>
+			<Element id="/at_intflash/ucRedundancy1" size="1" type="0"/>
+		</Option>
+		<Option id="iflash2_read_ahead" value="37">
+			<Element id="/at_intflash/ulBufferReadAheadInstructions" size="4" type="0"/>
+			<Element id="/at_intflash/ulBufferReadAheadData" size="4" type="0"/>
+		</Option>
+		<Option id="iflash2_offset" value="38">
+			<Element id="/at_intflash/ulInitialDwordOffset" size="4" type="0"/>
+		</Option>
+		<Option id="iflash2_redundancy" value="39">
+			<Element id="/at_intflash/ucRedundancy0" size="1" type="0"/>
+			<Element id="/at_intflash/ucRedundancy1" size="1" type="0"/>
+		</Option>
+		<Option id="current_flash" value="40">
+			<Element id="/atSpiFlashCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/aucPadControl" size="6" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucDummyByte" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucIdleConfiguration" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ulSqiRomCfg" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInFifoMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInRomMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/usAtmelDataflashPageSize" size="2" type="0"/>
+			<Element id="/atSpiFlashCfg/ucFlags" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommand" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandBusWidths" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandDummyBytes" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandIdleCycles" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/aucSeqActivate" size="64" type="1"/>
+			<Element id="/atSpiFlashCfg/aucSeqDeactivate" size="16" type="1"/>
+		</Option>
+		<Option id="current_flash_initial_speed" value="41">
+			<Element id="/atSpiFlashCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="current_flash_padctrl" value="42">
+			<Element id="/atSpiFlashCfg/tSpiCfg/aucPadControl" size="6" type="0"/>
+		</Option>
+		<Option id="current_flash_idle_mode" value="43">
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucDummyByte" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucIdleConfiguration" size="1" type="0"/>
+		</Option>
+		<Option id="current_flash_speed_cmd" value="44">
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInFifoMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInRomMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/usAtmelDataflashPageSize" size="2" type="0"/>
+			<Element id="/atSpiFlashCfg/ucFlags" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommand" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandBusWidths" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandDummyBytes" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandIdleCycles" size="1" type="0"/>
+		</Option>
+		<Option id="current_flash_speed" value="45">
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInFifoMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInRomMode_kHz" size="4" type="0"/>
+		</Option>
+		<Option id="current_flash_speed_fifo" value="46">
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInFifoMode_kHz" size="4" type="0"/>
+		</Option>
+		<Option id="current_flash_cmd" value="47">
+			<Element id="/atSpiFlashCfg/ucFlags" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommand" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandBusWidths" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandDummyBytes" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandIdleCycles" size="1" type="0"/>
+		</Option>
+		<Option id="current_flash_cmd_atmel" value="48">
+			<Element id="/atSpiFlashCfg/usAtmelDataflashPageSize" size="2" type="0"/>
+			<Element id="/atSpiFlashCfg/ucFlags" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommand" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandBusWidths" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandDummyBytes" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandIdleCycles" size="1" type="0"/>
+		</Option>
+		<Option id="sqi_current" value="49">
+			<Element id="/atSpiFlashCfg/ulSqiRomCfg" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/aucSeqActivate" size="64" type="1"/>
+			<Element id="/atSpiFlashCfg/aucSeqDeactivate" size="16" type="1"/>
+		</Option>
+		<Option id="sqi_current_rom_cfg" value="50">
+			<Element id="/atSpiFlashCfg/ulSqiRomCfg" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_current_activate" value="51">
+			<Element id="/atSpiFlashCfg/aucSeqActivate" size="64" type="1"/>
+		</Option>
+		<Option id="sqi_current_deactivate" value="52">
+			<Element id="/atSpiFlashCfg/aucSeqDeactivate" size="16" type="1"/>
+		</Option>
+		<Option id="sqi_cs0_flash" value="53">
+			<Element id="/atSpiFlashCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/aucPadControl" size="6" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucDummyByte" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucIdleConfiguration" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ulSqiRomCfg" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInFifoMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInRomMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/usAtmelDataflashPageSize" size="2" type="0"/>
+			<Element id="/atSpiFlashCfg/ucFlags" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommand" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandBusWidths" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandDummyBytes" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandIdleCycles" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/aucSeqActivate" size="64" type="1"/>
+			<Element id="/atSpiFlashCfg/aucSeqDeactivate" size="16" type="1"/>
+		</Option>
+		<Option id="sqi_cs0_flash_initial_speed" value="54">
+			<Element id="/atSpiFlashCfg/tSpiCfg/ulInitialSpeedKhz" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_flash_padctrl" value="55">
+			<Element id="/atSpiFlashCfg/tSpiCfg/aucPadControl" size="6" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_flash_idle_mode" value="56">
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucDummyByte" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucMode" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/tSpiCfg/ucIdleConfiguration" size="1" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_flash_speed_cmd" value="57">
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInFifoMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInRomMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/usAtmelDataflashPageSize" size="2" type="0"/>
+			<Element id="/atSpiFlashCfg/ucFlags" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommand" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandBusWidths" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandDummyBytes" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandIdleCycles" size="1" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_flash_speed" value="58">
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInFifoMode_kHz" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInRomMode_kHz" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_flash_speed_fifo" value="59">
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInFifoMode_kHz" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_flash_speed_rom" value="60">
+			<Element id="/atSpiFlashCfg/uiMaximumSpeedInRomMode_kHz" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_flash_cmd" value="61">
+			<Element id="/atSpiFlashCfg/ucFlags" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommand" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandBusWidths" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandDummyBytes" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandIdleCycles" size="1" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_flash_cmd_atmel" value="62">
+			<Element id="/atSpiFlashCfg/usAtmelDataflashPageSize" size="2" type="0"/>
+			<Element id="/atSpiFlashCfg/ucFlags" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommand" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandBusWidths" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandDummyBytes" size="1" type="0"/>
+			<Element id="/atSpiFlashCfg/ucReadCommandIdleCycles" size="1" type="0"/>
+		</Option>
+		<Option id="sqi_cs0" value="63">
+			<Element id="/atSpiFlashCfg/ulSqiRomCfg" size="4" type="0"/>
+			<Element id="/atSpiFlashCfg/aucSeqActivate" size="64" type="1"/>
+			<Element id="/atSpiFlashCfg/aucSeqDeactivate" size="16" type="1"/>
+		</Option>
+		<Option id="sqi_cs0_rom_cfg" value="64">
+			<Element id="/atSpiFlashCfg/ulSqiRomCfg" size="4" type="0"/>
+		</Option>
+		<Option id="sqi_cs0_activate" value="65">
+			<Element id="/atSpiFlashCfg/aucSeqActivate" size="64" type="1"/>
+		</Option>
+		<Option id="sqi_cs0_deactivate" value="66">
+			<Element id="/atSpiFlashCfg/aucSeqDeactivate" size="16" type="1"/>
+		</Option>
+		<Option id="uart" value="67">
+			<Element id="/t_uart/uPadCtrl/s/ucRX" size="1" type="0"/>
+			<Element id="/t_uart/uPadCtrl/s/ucTX" size="1" type="0"/>
+			<Element id="/t_uart/uPadCtrl/s/ucRTS" size="1" type="0"/>
+			<Element id="/t_uart/uPadCtrl/s/ucCTS" size="1" type="0"/>
+			<Element id="/t_uart/uc_mode" size="1" type="0"/>
+			<Element id="/t_uart/us_baud_div" size="2" type="0"/>
+			<Element id="/t_uart/uc_connect1" size="1" type="0"/>
+			<Element id="/t_uart/uc_connect2" size="1" type="0"/>
+		</Option>
+		<Option id="uart_rx_tx" value="68">
+			<Element id="/t_uart/uPadCtrl/s/ucRX" size="1" type="0"/>
+			<Element id="/t_uart/uPadCtrl/s/ucTX" size="1" type="0"/>
+		</Option>
+		<Option id="uart_mode_rts_cts" value="69">
+			<Element id="/t_uart/uPadCtrl/s/ucRTS" size="1" type="0"/>
+			<Element id="/t_uart/uPadCtrl/s/ucCTS" size="1" type="0"/>
+			<Element id="/t_uart/uc_mode" size="1" type="0"/>
+		</Option>
+		<Option id="uart_mode_baud_div" value="70">
+			<Element id="/t_uart/uc_mode" size="1" type="0"/>
+			<Element id="/t_uart/us_baud_div" size="2" type="0"/>
+		</Option>
+	</Options>
+	<Definitions>
+		<Definition name="BOOTDEV_INTFLASH0" value="1"/>
+		<Definition name="BOOTDEV_INTFLASH1" value="2"/>
+		<Definition name="BOOTDEV_INTFLASH2" value="3"/>
+		<Definition name="BOOTDEV_NONE" value="0"/>
+		<Definition name="BOOTDEV_SQI_FLASH_CS0" value="4"/>
+		<Definition name="BOOTDEV_STOP_SIMU" value="255"/>
+		<Definition name="CONSOLE_DEVICE_ETH_EXTPHY0" value="4"/>
+		<Definition name="CONSOLE_DEVICE_ETH_EXTPHY1" value="5"/>
+		<Definition name="CONSOLE_DEVICE_ETH_INTPHY0" value="2"/>
+		<Definition name="CONSOLE_DEVICE_ETH_INTPHY1" value="3"/>
+		<Definition name="CONSOLE_DEVICE_ETH_LVDS0" value="6"/>
+		<Definition name="CONSOLE_DEVICE_ETH_LVDS1" value="7"/>
+		<Definition name="CONSOLE_DEVICE_NONE" value="0"/>
+		<Definition name="CONSOLE_DEVICE_UART_COM" value="1"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy0_automdix" value="0x00000100"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy0_enable" value="0x00001000"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy0_fxmode" value="0x00000080"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy0_mode" value="0x00000070"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy0_np_msg_code" value="0x00000e00"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy1_automdix" value="0x00020000"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy1_enable" value="0x00200000"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy1_fxmode" value="0x00010000"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy1_mode" value="0x0000e000"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy1_np_msg_code" value="0x001c0000"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy_address" value="0x0000000f"/>
+		<Definition name="MSK_NX90_int_phy_cfg_phy_ctrl_phy_reset" value="0x80000000"/>
+		<Definition name="SMC_ADR" value="0xfc"/>
+		<Definition name="SMC_CHTR_FIFO" value="0xc9"/>
+		<Definition name="SMC_CHTR_No" value="0xc8"/>
+		<Definition name="SMC_CHTR_ROM" value="0xca"/>
+		<Definition name="SMC_CMP" value="0xe0"/>
+		<Definition name="SMC_CMP_FATAL" value="0xe8"/>
+		<Definition name="SMC_IDLE_NNN" value="0x80"/>
+		<Definition name="SMC_IDLE_SDD" value="0xb0"/>
+		<Definition name="SMC_IDLE_SDN" value="0xa0"/>
+		<Definition name="SMC_IDLE_SNN" value="0x90"/>
+		<Definition name="SMC_JUMP" value="0xc0"/>
+		<Definition name="SMC_JUMP_EQ" value="0xc1"/>
+		<Definition name="SMC_JUMP_NE" value="0xc2"/>
+		<Definition name="SMC_JUMP_NZ" value="0xc4"/>
+		<Definition name="SMC_JUMP_ZE" value="0xc3"/>
+		<Definition name="SMC_MASK" value="0xf0"/>
+		<Definition name="SMC_MODE" value="0xf8"/>
+		<Definition name="SMC_RECEIVE_NNN" value="0x00"/>
+		<Definition name="SMC_RECEIVE_SDD" value="0x30"/>
+		<Definition name="SMC_RECEIVE_SDN" value="0x20"/>
+		<Definition name="SMC_RECEIVE_SNN" value="0x10"/>
+		<Definition name="SMC_SEND_NNN" value="0x40"/>
+		<Definition name="SMC_SEND_SDD" value="0x70"/>
+		<Definition name="SMC_SEND_SDN" value="0x60"/>
+		<Definition name="SMC_SEND_SNN" value="0x50"/>
+		<Definition name="SPI_BUS_WIDTH_1BIT" value="0"/>
+		<Definition name="SPI_BUS_WIDTH_2BIT" value="1"/>
+		<Definition name="SPI_BUS_WIDTH_4BIT" value="2"/>
+		<Definition name="SPI_FLASH_FLAGS_4_bit_address" value="0x02"/>
+		<Definition name="SPI_FLASH_FLAGS_Atmel_address" value="0x04"/>
+		<Definition name="SPI_FLASH_FLAGS_Forbid_Autodetect" value="0x00000001"/>
+		<Definition name="SPI_FLASH_FLAGS_Forbid_Autodetection_of_Dummy_and_Idle" value="0x01"/>
+		<Definition name="SPI_MACRO_CHANGE_TRANSPORT_FIFO" value="1"/>
+		<Definition name="SPI_MACRO_CHANGE_TRANSPORT_No_Change" value="0"/>
+		<Definition name="SPI_MACRO_CHANGE_TRANSPORT_ROM" value="2"/>
+		<Definition name="SPI_MODE0" value="0"/>
+		<Definition name="SPI_MODE1" value="1"/>
+		<Definition name="SPI_MODE2" value="2"/>
+		<Definition name="SPI_MODE3" value="3"/>
+		<Definition name="SPI_UNIT_OFFSET_CURRENT" value="0"/>
+		<Definition name="SPI_UNIT_OFFSET_SQI_CS0" value="1"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy0_automdix" value="8"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy0_enable" value="12"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy0_fxmode" value="7"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy0_mode" value="4"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy0_np_msg_code" value="9"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy1_automdix" value="17"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy1_enable" value="21"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy1_fxmode" value="16"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy1_mode" value="13"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy1_np_msg_code" value="18"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy_address" value="0"/>
+		<Definition name="SRT_NX90_int_phy_cfg_phy_ctrl_phy_reset" value="31"/>
+		<Definition name="UART_MODE_2STOPBITS" value="0x08"/>
+		<Definition name="UART_MODE_BYTESIZE_5BIT" value="0"/>
+		<Definition name="UART_MODE_BYTESIZE_6BIT" value="32"/>
+		<Definition name="UART_MODE_BYTESIZE_7BIT" value="64"/>
+		<Definition name="UART_MODE_BYTESIZE_8BIT" value="96"/>
+		<Definition name="UART_MODE_ENABLE_RTSCTS" value="0x01"/>
+		<Definition name="UART_MODE_EVEN_PARITY" value="0x04"/>
+		<Definition name="UART_MODE_PARITY_ENABLE" value="0x02"/>
+	</Definitions>
+</PatchDefinitions>

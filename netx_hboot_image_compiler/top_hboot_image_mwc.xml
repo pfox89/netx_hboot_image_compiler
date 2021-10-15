@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!-- no end because the end is inside the following FW image. -->
+    <!-- alternative hardware configuration data located inside first 8kByte of alternative hboot_image  -->
+    <!-- default location of alternative hboot_image is 0x00DF000 -->
+<HBootImage type="REGULAR" device="INTFLASH" has_header="True" has_end="False" offset="0x00DF000">
+
+  <!-- Use the magic cookie for the alternative image. -->
+  <Header set_flasher_parameters="true">
+    <Value index="0">0xf3ad9e00</Value>
+  </Header>
+
+  <Chunks>
+
+    <!-- reserved 1.5kByte space for HTBL -->
+    <Skip absolute="0x00DF600" fill="0x48" />
+
+    <Include name="@hw_config">
+        <Parameter name="HWC_TYPE_HEX">4d5743</Parameter> <!-- MWC -->
+        <Parameter name="HWC_TYPE">MWC</Parameter>
+        <Parameter name="HWC_INFO_ADDRESS">0x001DF608</Parameter>
+        <Parameter name="IS_MWC">1</Parameter>
+    </Include>
+        
+    <!-- Breakpoint used for MWC: Jump to a bx lr instruction in ROM at 0x1FF04 in netx90 -->
+    <Execute start_app="false" lock_firewall="false" activate_debugging="true" apply_firewall_settings="false">
+      <Address>0x1FF05</Address>
+    </Execute>
+
+    <!-- fill with dummy data until end of HW data is reached -->
+    <!-- check if HW data is not to big -->
+    <Skip absolute="0x000E0FF4" fill="0x40" />
+
+    <!-- Skip over FW File Header V3 until the offset 0x000E1200. -->
+    <SkipIncomplete absolute="0x000E1200" />
+
+  </Chunks>
+</HBootImage>

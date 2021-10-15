@@ -1,0 +1,59 @@
+<peripherals chip_type="netx90_rev0" board="default,nrp_h90-re_fxdx">
+	<peripherals_list>
+		<peripheral id="sdram_16_bit" name="SDRAM16">
+			<configurations>
+				<config id="IS45S16400J-7BLA2-NXHX-SDRSPM_R1" name="IS45S16400J-7BLA2 (8MByte ISSI) on NXHX-SDRSPM R1">
+					<signals>
+						<signal id="sd_a0"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a1"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a2"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a3"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a4"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a5"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a6"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a7"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a8"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a9"   drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a10"  drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a11"  drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_a12"  drive_strength="high" internal_resistor="pu,disabled" read_only="true" optional="false" selected="false"/>
+						<signal id="sd_ba0"  drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_ba1"  drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_rasn" drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_casn" drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_dqm0" drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_dqm1" drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_csn"  drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_d0"   drive_strength="high" internal_resistor="pd,enabled"  read_only="true"/>
+						<signal id="sd_d1"   drive_strength="high" internal_resistor="pd,enabled"  read_only="true"/>
+						<signal id="sd_d2"   drive_strength="high" internal_resistor="pd,enabled"  read_only="true"/>
+						<signal id="sd_d3"   drive_strength="high" internal_resistor="pd,enabled"  read_only="true"/>
+						<signal id="sd_d4"   drive_strength="high" internal_resistor="pd,enabled"  read_only="true"/>
+						<signal id="sd_d5"   drive_strength="high" internal_resistor="pd,enabled"  read_only="true"/>
+						<signal id="sd_d6"   drive_strength="high" internal_resistor="pd,enabled"  read_only="true"/>
+						<signal id="sd_d7"   drive_strength="high" internal_resistor="pd,enabled"  read_only="true"/>
+						<signal id="sd_d8"   drive_strength="high" internal_resistor="pu,enabled"  read_only="true"/>
+						<signal id="sd_d9"   drive_strength="high" internal_resistor="pu,enabled"  read_only="true"/>
+						<signal id="sd_d10"  drive_strength="high" internal_resistor="pu,enabled"  read_only="true"/>
+						<signal id="sd_d11"  drive_strength="high" internal_resistor="pu,enabled"  read_only="true"/>
+						<signal id="sd_d12"  drive_strength="high" internal_resistor="pu,enabled"  read_only="true"/>
+						<signal id="sd_d13"  drive_strength="high" internal_resistor="pu,enabled"  read_only="true"/>
+						<signal id="sd_d14"  drive_strength="high" internal_resistor="pu,enabled"  read_only="true"/>
+						<signal id="sd_d15"  drive_strength="high" internal_resistor="pu,enabled"  read_only="true"/>
+						<signal id="sd_cke"  drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_clk"  drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+						<signal id="sd_wen"  drive_strength="high" internal_resistor="pu,disabled" read_only="true"/>
+					</signals>
+					<parameters>
+						<!-- Preliminary/untested parameters. 
+							Clock phase: 4   Data sample phase: 2  CAS Latency: 2 -->
+						<param id="general_ctrl" value="0x000d0011" read_only="true"/>
+						<param id="timing_ctrl" value="0x02403251" read_only="true"/>
+						<param id="mode_register" value="0x22" read_only="true"/>
+						<param id="sdram_size" value="0x08" read_only="true"/>
+					</parameters>
+				</config>
+			</configurations>
+		</peripheral>
+	</peripherals_list>
+</peripherals>

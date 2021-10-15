@@ -1,0 +1,259 @@
+Changelog for HWConfig Tool
+
+Version 3.0.11
+--------------
+* Unlock the XM0 peripheral and allow configuration.
+* Add a configuration for the SQI flash W25Q32FV (identical to W25Q32BV)
+
+Pinning version: 1.1.0.3
+min. HBoot compiler version: 0.0.11
+
+Version 3.0.10 for netRapid H90-RE
+------------------------------------
+* Replace the pin layout of the netx90_rev1 with that of the module.
+* Remove signals, pins and peripherals that are not available.
+
+Version 3.0.10
+--------------
+* Support <verbatim> nodes in peripheral descriptions and overlays.
+* Support SQI flash Winbond W25Q32JV.
+
+Version 3.0.9
+-------------
+* Only boot from internal flash.
+* Firewall settings: keep pad control registers accessible to the COM CPU.
+  The access permission for the COM CPU is set in addition to the setting made in the HWCONFIG GUI.
+
+Version 3.0.8
+-------------
+* Change chip type names: netx90_rev0, netx90_rev1, netx90 (alias for latest revision)
+* Update SDRAM parameters for NXHX90-JTAG with extension board
+* Firewall settings: keep UART and SQI registers accessible to the COM CPU.
+  The access permission for the COM CPU is set in addition to the setting made in the HWCONFIG GUI.
+* UART, SQI, SDRAM: only enable these peripherals in the handover parameters 
+  if they are accessible to the COM CPU according to the firewall settings.
+
+Version 3.0.7
+-------------
+* Include support for netx90_Rev1.
+
+Version 3.0.6
+
+-------------
+
+* Bugfix: do not lock registers when DPM/IDPM is enabled. (NXTHWCONFI-82)
+* Bugfix: add maximum length to string entry fields in General Configuration. 
+  The length value is now a string. (NXTHWCONFI-81)
+
+Version 3.0.5
+-------------
+* Include the top level HBoot image XML files for netx Studio.
+* Initialize parallel DPM and IDPM manually via regi chunk.
+* Set default FIFO frequency for SQI interface to 50 MHz.
+* Add GUI fields to enter name and version of HWC
+  Add description and version information as an extra chunk in the hwconfig image.
+* Update handover parameters to version 2.
+* Workaround for incorrect handling of firewall registers.
+* Add Peripheral MENC with two configurations: MENC0 and MENC 0/1 + MP0/1.
+* Remove GPIO 8-11 from the hwconfig GUI. These are acutally GPIO0-3 for the COM side and not available for the APP side.
+* Change handling of SQIROM: Only set the SQIROM frequency when XIP is enabled.
+
+
+Version 3.0.4
+------------- 
+* Correct the clock divider of the XIP mode when enabled 
+* Firewall settings
+
+
+Version 3.0.3
+--------------
+* Added peripherals: MPWM, XM0, SQI0_B
+* Updated peripherals: SPI, SQI, SQI0/1, SDPM0/1, MLED0-3
+* Disabled peripherals MENC0 and MENC1 in the GUI since they're not implemented yet.
+* The input function of all pads double-bonded with ADC/LVDS pads is turned on by default.
+* The io_config registers are completely overwritten (set write mask to 0xffff).
+
+
+Version 3.0.2
+--------------
+* Updated SDRAM controller parameters and pad control configuration for SDRAM.
+  Clock phase: 4   Data sample phase: 2  CAS Latency: 2
+* Handover parameters are now placed at 0x20240.
+* Added parameters to exec chunk: start_app="false" lock_firewall="false" activate_debugging="false" apply_firewall_settings="false"
+
+Version 3.0.1
+--------------
+
+* Only change the register idpm_com/idpm_addr_cfg when IDPM is selected.
+
+* HWconfig boot images set the pad control registers after the MDUP chunks.
+
+* Various updates to test HW configurations and references.
+  Update HW configs and references for NXHX90-JTAG R3.
+  Add configuration overlay for the NXHX-SDRSPM R1 module.
+
+* Remove the existing SDRAM overlays, add overlay for IS45S16400J-7BLA2 (8MByte ISSI) on NXHX-SDRSPM R1.
+
+* Dump registers between 0xff4016d0-0xff401bfc. Check firewall and MADC registers.
+
+* Disable peripherals sqi0_b and MPWM in netx Studio GUI.
+
+
+Version 3.0.0
+--------------
+
+* Support for netx 90 (Full)
+  Removed support for netx 90 MPW.
+  Accepts chip types netx90 and netx90_mpw, but treats both as netx90.
+
+* Added various peripherals
+
+* Pass version/chiptype information from HWConfig XML and peripherals.xml to the HBoot template
+
+* Add configuration overlay files to HWconfig tool.
+
+* Temporary: The path argument of list_dynamic_cfg is now optional, 
+  when called without the path, the path to hwconfig.py is used instad.
+
+* Added subcommands: make_hboot_xml, list_static_cfg, list_dynamic_cfg, list_supported_chips
+The previous call to generate a boot image XML file now requires the subcommand make_hboot_xml.
+
+
+Version 2.0.1
+--------------
+
+* Update setup_dpm snippet to v1.1.7: Do not change hif_io_cfg if neither of
+  DPM0/SPM0 nor DPM1/SPM1 are configured.
+
+* Bugfix: SDRAM size handover parameter is SDRAM size divided by two.
+
+
+Version 2.0.0
+--------------
+
+* Added a pseudo-peripheral 'general' with attributes 'app_cpu_enable' and
+  'idpm_enable'.
+
+* Added attribute 'sdram_size' to SDRAM peripherals.
+
+* Add StartAppCpu snippet to output when 'app_cpu_enable' is specified.
+
+* Added hand over parameters into boot image, including DPM options and SDRAM
+  size parameters depending on DPM/SDRAM configuration.
+
+* Update setup DPM code to v1.1.6. 
+  - The DPM window is not activated, this needs to be done by the firmware.
+  - The IDPM is not activated by default, only when 'idpm_enable' is specified.
+
+* IoConfig for phy0 and phy1/MLED: 
+  - MDIO/MII are connected to the internal PHYs.
+  - The signal sources for the MLED pins are configured according to the 
+    schematic for NXHX 90-JTAG Rev2 (see readme).
+  - The MLED pins are not activated and the register is set to the reset value. 
+  - Removed PHY0_LED_LINK_IN and PHY1_LED_LINK_IN from the affected pins.
+
+* Versioning: 
+  - A version attribute has been added to the top-level peripherals tag in 
+    netx90_mpw_peripherals.xml.
+  - The version checkig of the input XML file (doc_version) has been removed.
+
+
+Version 0.0.7
+--------------
+
+* Update DPM setup code to v1.1.2. (bugfix)
+
+
+Version 0.0.6
+--------------
+
+* Disable the intflash redundancy pages.
+
+
+Version 0.0.5
+--------------
+
+HWConfig tool:
+* added COM peripherals: UART_COM, PHY0, PHY0_PHY1, XM0
+
+
+Version 0.0.4
+--------------
+
+HWConfig tool:
+
+* SDRAM: Set hif_io_config.hif_a_width according to config parameter sd_a12.
+* SDRAM: Check hif_a_width against row/column count in SDRAM general_ctrl parameter.
+* SDRAM: Rename SDRAM dbus32 to dbus16.
+* SDRAM: Check hif_mi_cfg against dbus16 in SDRAM general_ctrl parameter.
+* SDRAM: Allow enabling A12 for SDRAM interface even if the SDRAM does not need A12.
+* MMIO: Add constraints for MMIO9-15 that throw an error if the MMIO is configured as a PIO.
+* DPM: Update setup_dpm snippet
+* DPM: If no DPM or IDPM has been configured, configure an IDPM with default settings.
+
+
+Test: 
+* Add new test cases for SDRAM and MMIO.
+* Stop immediately if openOCD or lua exit with an error.
+* Mask out the input status of all MMIOs.
+* Add blinky to boot image.
+* Add a breakpoint after the execution of the HWconfig and before entering the blinki.
+
+
+
+Version 0.0.3
+---------------
+
+* Update version handling; generate version from GIT info.
+* Add -V/--version command.
+
+* Updated apply_hwconfig and setup_dpm snippets.
+* Compile boot images.
+
+* Remove the XML header/footer from the output to allow the output to be included in a HBoot image.
+* Changed output (bootimage XML) to be more readable. 
+  Use UInt32 format for register values (instead of hex values in little endian order).
+  
+* Enable the input function of pins MMIO 4,5,6 by default, disable them when ADC inputs are configured.
+* Add Constraint to check that the input of pin MMIO7 is always disabled.
+* Add hif_io_cfg to output structure. 
+* Added registers for IDPM (no peripheral yet).
+* Added bit fields for some of the DPM control registers
+* Serial DPM: configure SIRQ/DIRQ and SQI mode
+* Output DPM1 registers into bootimage
+* SPM1 can only be used together with SPM0.
+* HWconfigs redone using netX90Demo_201801111433.
+
+apply_hwconfig and setup_dpm snippets:
+* If multiple DPMs are configured, both parallel and serial DPM are at the 
+  same address. In both cases, the message "MESSAGE_DPM" is put at the 
+  beginning of this area, formerly MESSAGE_DPM_PARALLEL and MESSAGE_DPM_SERIAL.
+* If all DPMs are disabled in the configuration, the IDPM is enabled by default.
+
+
+Version 22.12.2017
+-------------------
+
+* Set up DPM using a variant of the routine from com.hilscher.hw.util-setup_dpm.
+
+* Renamed peripherals to include "_app" suffix:
+spi0 -> spi0_app
+spi2 -> spi2_app
+can0 -> can0_app
+can1 -> can1_app
+uart_xpic -> uart_xpic_app
+
+* Added peripheral "sqi"
+  "sdram": made 12 selectable
+  "spi0": made cs1 selectable
+  "spi2": made cs1 and cs2 selectable
+  "uart_app": made rts/cts selectable
+  "uart_xpic": made rts/cts selectable
+
+* Added configuration of DPM0 (registers without bitfields), extended output data, updated apply code.
+* Get SPI mode from config instead of using a hardcoded value.
+* Allow SDRAM parameters to be passed as a configuration in a peripheral.
+* Add peripherals adc0_in0, adc0_in1, adc1_in0, adc1_in1.
+* Add handling of input_enable field in padCtrl registers.
+
+
